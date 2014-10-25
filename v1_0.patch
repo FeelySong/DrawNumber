@@ -1,0 +1,1026 @@
+Index: Number.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Number.py	(revision )
++++ Number.py	(revision )
+@@ -0,0 +1,145 @@
++# coding=utf-8
++import time
++import multiprocessing
++from datetime import datetime
++
++import DrawNO
++import db
++import GDSFC
++
++import sys
++reload(sys)
++sys.setdefaultencoding('utf-8')
++sys.excepthook = lambda *args: None
++STDERR = sys.stderr
++
++
++#重庆时时彩
++def ssc_drawnumber(ssc_type,db_ssc_type):
++    ms_cqssc=db.MSSQL()
++    returndate=''
++    while True:
++        #调用爬虫，获取开奖信息
++        assert isinstance(ssc_type, str)
++        draw_date,draw_code, draw_time_str=DrawNO.drawnumber(ssc_type)
++        if draw_code == '0' or draw_date <= returndate:
++            pass
++        else:
++            returndate=ms_cqssc.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
++            time.sleep(180)
++        # draw_time = datetime.strptime(draw_time_str, "%Y-%m-%d %H:%M")
++        # ms.IsInfoExists(SPname='ibc.dbo.IsInfoExists',lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time,addtime=datetime.now())
++        # time.sleep(1)
++        # ms.SYSPaiJiang(SPname='ibc.dbo.SYSPaiJiang',kjExpect=draw_date,kjTime=draw_time_str,kjCode=draw_code,ltType=db_ssc_type)
++        time.sleep(30)
++
++def jxssc_drawnumber(ssc_type,db_ssc_type):
++    ms_jxssc=db.MSSQL()
++    returnDate=''
++    while True:
++        #调用爬虫，获取开奖信息
++        assert isinstance(ssc_type, str)
++        draw_code, draw_date, draw_time_str=DrawNO.drawnumber(ssc_type)
++        if  draw_code == '0' or draw_date <= returnDate:
++            pass
++        else:
++            returnDate=ms_jxssc.JXCallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
++            time.sleep(180)
++        time.sleep(30)
++
++def gd11x5(ssc_type,db_ssc_type):
++    ms_gd11x5=db.MSSQL()
++    returndate=''
++    while True:
++        #调用爬虫，获取开奖信息
++        assert isinstance(ssc_type, str)
++        draw_date,draw_code, draw_time_str=DrawNO.gd11x5(ssc_type)
++        if draw_code == '0' or draw_date <= returndate:
++            pass
++        else:
++            returndate=ms_gd11x5.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
++            time.sleep(180)
++        time.sleep(30)
++
++def tjssc_drawnumber(db_ssc_type):
++    ms_jxssc=db.MSSQL()
++    returnDate=''
++    while True:
++        #调用爬虫，获取开奖信息
++        draw_code, draw_date, draw_time_str=DrawNO.tjssc()
++        if  draw_code == '0' or draw_date <= returnDate:
++            pass
++        else:
++            returnDate=ms_jxssc.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
++            time.sleep(180)
++        time.sleep(30)
++
++def pls_drawnumber(ssc_type,db_ssc_type):
++    ms_cqssc=db.MSSQL()
++    returnDate=''
++    while True:
++        #调用爬虫，获取开奖信息
++        assert isinstance(ssc_type, str)
++        draw_date,draw_code, draw_time_str=DrawNO.drawnumber(ssc_type)
++        if draw_code == '0' or draw_date <= returnDate:
++            pass
++        else:
++            returnDate=ms_cqssc.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
++            time.sleep(180)
++        time.sleep(30)
++
++
++#GDSFC
++def gdsf_drawnumber(gdsf_db_type):
++    ms_gdsf=db.MSSQL()
++    returnDate=''
++    while True:
++        # #调用爬虫，获取开奖信息
++        draw_date,draw_code,draw_time_str=GDSFC.drawnumber()
++        if  draw_code == '0' or draw_date <= returnDate:
++            pass
++        else:
++            returnDate=ms_gdsf.CallSP(lottery_type=gdsf_db_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
++        time.sleep(30)
++
++
++def main():
++    """
++
++    :rtype : Null
++    """
++
++    #重庆时时彩
++    ssc_type='cqssc'
++    db_ssc_type='SSC'
++    p_cq=multiprocessing.Process(name='CQSSC',target=ssc_drawnumber,args=(ssc_type,db_ssc_type,))
++    p_cq.start()
++    p_cq.join(timeout=10)
++    #天津时时彩
++    db_ssc_type='TSC'
++    p_tj=multiprocessing.Process(name='TJSSC',target=tjssc_drawnumber,args=(db_ssc_type,))
++    p_tj.start()
++    p_tj.join(10)
++
++    #江西时时彩
++    ssc_type='jxssc'
++    db_ssc_type='XSC'
++    p_jx=multiprocessing.Process(name='JXSSC',target=jxssc_drawnumber,args=(ssc_type,db_ssc_type,))
++    p_jx.start()
++    p_jx.join(10)
++
++    #广东十分彩
++    gdsf_db_type='GDS'
++    p_gdsf=multiprocessing.Process(name='GDSFC',target=gdsf_drawnumber,args=(gdsf_db_type,))
++    p_gdsf.start()
++    p_gdsf.join(timeout=10)
++
++    #广东11选5
++    ssc_type='gd11x5'
++    db_11x5_type='SYX'
++    p_11x5=multiprocessing.Process(name='GD11X5',target=gd11x5,args=(ssc_type,db_11x5_type,))
++    p_11x5.start()
++    p_11x5.join(10)
++
++if __name__ == "__main__":
++    main()
+\ No newline at end of file
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/.name	(revision )
++++ .idea/.name	(revision )
+@@ -0,0 +1,1 @@
++DrawNumber
+\ No newline at end of file
+Index: .idea/inspectionProfiles/profiles_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/inspectionProfiles/profiles_settings.xml	(revision )
++++ .idea/inspectionProfiles/profiles_settings.xml	(revision )
+@@ -0,0 +1,7 @@
++<component name="InspectionProjectProfileManager">
++  <settings>
++    <option name="PROJECT_PROFILE" value="Project Default" />
++    <option name="USE_PROJECT_PROFILE" value="true" />
++    <version value="1.0" />
++  </settings>
++</component>
+\ No newline at end of file
+Index: GD11X5.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- GD11X5.py	(revision )
++++ GD11X5.py	(revision )
+@@ -0,0 +1,65 @@
++__author__ = 'Feely'
++
++#!/usr/bin/python
++#-*- coding: utf8 -*-
++
++from lxml import etree
++from datetime import datetime
++import sys
++reload(sys)
++sys.setdefaultencoding('utf-8')
++STDERR = sys.stderr
++import mechanize
++import logging
++
++
++#Browser
++br = mechanize.Browser()
++
++#Browser options
++br.set_handle_equiv(True)
++##br.set_handle_gzip(True)
++br.set_handle_redirect(True)
++br.set_handle_referer(True)
++br.set_handle_robots(False)
++#Follows refresh 0 but not hangs on refresh > 0
++br.set_handle_refresh(mechanize.HTTPRefreshProcessor(), max_time=1)
++#User-Agent
++br.addheaders = [("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0")]
++
++logging.basicConfig(filename='/tmp/kaijiang.log',level=logging.INFO)
++logging.basicConfig(filename='/tmp/errkj.log',level=logging.ERROR)
++
++
++
++def gd11x5(ssc_type):
++    """
++    :rtype : str
++    """
++    try:
++        r = br.open('http://data.shishicai.cn/'+ssc_type+'/haoma/')
++        ssc_html = r.read().decode('utf-8')
++    except Exception,err:
++        print str(err)
++        logging.error(str(err))
++        return '0','0','0'
++    else:
++        #show the html title
++        print br.title()
++        #Show the response headers
++        #print r.info()
++        ## xpath analyze
++        d = etree.HTML(ssc_html)
++        result = d.xpath(u'//meta[2]/@content')[0].encode("utf-8")
++        print result
++        draw_date = result[15:27]
++        draw_code = result[43:57]
++        #draw_code1=draw_code[0]+','+draw_code[1]+','+draw_code[2]+','+draw_code[3]+','+draw_code[4]
++        draw_time=result[71:87].strip()
++        print draw_date, draw_code, draw_time,datetime.now()
++        logging.info(br.title())
++        logging.info('date:%s code:%s time:%s',draw_date,draw_code,draw_time)
++        #print result
++        return draw_date,draw_code,draw_time
++
++gd11x5('gd11x5')
+\ No newline at end of file
+Index: .idea/scopes/scope_settings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/scopes/scope_settings.xml	(revision )
++++ .idea/scopes/scope_settings.xml	(revision )
+@@ -0,0 +1,5 @@
++<component name="DependencyValidationManager">
++  <state>
++    <option name="SKIP_IMPORT_STATEMENTS" value="false" />
++  </state>
++</component>
+\ No newline at end of file
+Index: .idea/inspectionProfiles/Project_Default.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/inspectionProfiles/Project_Default.xml	(revision )
++++ .idea/inspectionProfiles/Project_Default.xml	(revision )
+@@ -0,0 +1,17 @@
++<component name="InspectionProjectProfileManager">
++  <profile version="1.0" is_locked="false">
++    <option name="myName" value="Project Default" />
++    <option name="myLocal" value="false" />
++    <inspection_tool class="PyProtectedMemberInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
++    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
++      <option name="ignoredIdentifiers">
++        <value>
++          <list size="2">
++            <item index="0" class="java.lang.String" itemvalue="DrawNumber.excepthook" />
++            <item index="1" class="java.lang.String" itemvalue="sys.setdefaultencoding" />
++          </list>
++        </value>
++      </option>
++    </inspection_tool>
++  </profile>
++</component>
+\ No newline at end of file
+Index: BJKC.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- BJKC.py	(revision )
++++ BJKC.py	(revision )
+@@ -0,0 +1,63 @@
++__author__ = 'Feely'
++
++#!/usr/bin/python
++#-*- coding: utf8 -*-
++
++from lxml import etree
++from bs4 import BeautifulSoup
++import sys
++reload(sys)
++sys.setdefaultencoding('utf-8')
++STDERR = sys.stderr
++import mechanize
++import logging
++
++#Browser
++br = mechanize.Browser()
++#Browser options
++br.set_handle_equiv(True)
++##br.set_handle_gzip(True)
++br.set_handle_redirect(True)
++br.set_handle_referer(True)
++br.set_handle_robots(False)
++#Follows refresh 0 but not hangs on refresh > 0
++br.set_handle_refresh(mechanize.HTTPRefreshProcessor(), max_time=1)
++#User-Agent
++br.addheaders = [("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0")]
++
++def bjkc():
++    print "tjssc number:"
++    url = "http://baidu.lecai.com/lottery/draw/view/557"
++    #url ='http://kaijiang.cjcp.com.cn/cqssc'
++    r = br.open(url)
++    html = r.read()
++    soup = BeautifulSoup(html)
++    table_hot = soup.find('b')
++    print table_hot.get_text()
++    # print table_hot[2].get_text()
++    # print table_hot.contents[0]
++bjkc()
++
++def gd11x5():
++    """
++    :rtype : str
++    """
++    try:
++        r = br.open('http://baidu.lecai.com/lottery/draw/view/557')
++        ssc_html = r.read().decode('utf-8')
++        print ssc_html
++    except Exception,err:
++        print str(err)
++        logging.error(str(err))
++        return '0','0','0'
++    else:
++        #show the html title
++        print br.title()
++        #Show the response headers
++        #print r.info()
++        ## xpath analyze
++        d = etree.HTML(ssc_html)
++        result = d.xpath(u"//b[@id='jq_latest_draw_time']/text()")
++        print result
++
++gd11x5()
+\ No newline at end of file
+Index: DrawNO.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- DrawNO.py	(revision )
++++ DrawNO.py	(revision )
+@@ -0,0 +1,123 @@
++__author__ = 'Feely'
++
++#!/usr/bin/python
++#-*- coding: utf8 -*-
++
++from lxml import etree
++from datetime import datetime
++from bs4 import BeautifulSoup
++import sys
++reload(sys)
++sys.setdefaultencoding('utf-8')
++STDERR = sys.stderr
++import mechanize
++import logging
++import traceback
++
++#Browser
++br = mechanize.Browser()
++#Browser options
++br.set_handle_equiv(True)
++##br.set_handle_gzip(True)
++br.set_handle_redirect(True)
++br.set_handle_referer(True)
++br.set_handle_robots(False)
++#Follows refresh 0 but not hangs on refresh > 0
++br.set_handle_refresh(mechanize.HTTPRefreshProcessor(), max_time=1)
++#User-Agent
++br.addheaders = [("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0")]
++
++logging.basicConfig(filename='/tmp/kaijiang.log',level=logging.INFO)
++logging.basicConfig(filename='/tmp/errkj.log',level=logging.ERROR)
++
++def drawnumber(ssc_type):
++    #Open website
++    """
++    :param self:
++    :param ssc_type:
++    :rtype : str,datetime,datetime
++    """
++    try:
++        r = br.open('http://data.shishicai.cn/'+ssc_type+'/haoma/')
++    except Exception,err:
++        error1= str(err)
++        print ssc_type,error1
++        logging.error(br.title())
++        logging.exception(error1)
++        return '0','0','0'
++    else:
++        ssc_html = r.read().decode('utf-8')
++        #show the html title
++        print br.title()
++        ## xpath analyze
++        d = etree.HTML(ssc_html)
++        result = d.xpath(u'//meta[2]/@content')[0].encode("utf-8")
++        draw_date = result[18:30]
++        draw_code = result[46:51]
++        draw_code1=draw_code[0]+','+draw_code[1]+','+draw_code[2]+','+draw_code[3]+','+draw_code[4]
++        draw_time=result[65:81].strip()
++        print draw_date, draw_code1, draw_time,datetime.now()
++        logging.info(br.title())
++        logging.info('date:%s code:%s time:%s curtime:%s',draw_date,draw_code1,draw_time,datetime.now().time())
++        #print result
++        return draw_date,draw_code1,draw_time
++
++
++def tjssc():
++    try:
++        r = br.open("http://kaijiang.cjcp.com.cn/tjssc")
++        html = r.read()
++        soup = BeautifulSoup(html)
++        table_hot = soup.find('td',attrs={"class":"qihao"})
++        time_hot = soup.find ('td',attrs={"class":"time"})
++        draw_time=time_hot.get_text()
++        date_tmp=table_hot.get_text()
++        draw_date=date_tmp[0:8]+'-0'+date_tmp[9:11]
++        number1 = {}
++        codes=''
++        t1=0
++        # print soup.find('td', text=table_hot.get_text()).parent.find_all('input')['value']
++        while t1<5:
++            number1[t1]=soup.find("td", text=table_hot.get_text()).parent.find_all('input')[t1]['value']
++            codes=codes+number1[t1].strip()+','
++            t1+=1
++        draw_code=codes[:-1]
++        print "tjssc number:"
++        print draw_code,draw_date,draw_time
++        return draw_code,draw_date,draw_time[:-3]
++    except AttributeError as err:
++        error=str(err)
++        print error
++        logging.error(br.title())
++        logging.error(error)
++        return '0','0','0'
++
++
++
++def gd11x5(ssc_type):
++    try:
++        r = br.open('http://data.shishicai.cn/'+ssc_type+'/haoma/')
++    except Exception,err:
++        error=str(err)
++        print error
++        logging.error(br.title())
++        logging.error(error)
++        return '0','0','0'
++    else:
++        ssc_html = r.read().decode('utf-8')
++        #show the html title
++        print br.title()
++        #Show the response headers
++        #print r.info()
++        ## xpath analyze
++        d = etree.HTML(ssc_html)
++        result = d.xpath(u'//meta[2]/@content')[0].encode("utf-8")
++        draw_date = result[15:27]
++        draw_code = result[43:57]
++        #draw_code1=draw_code[0]+','+draw_code[1]+','+draw_code[2]+','+draw_code[3]+','+draw_code[4]
++        draw_time=result[71:87].strip()
++        print draw_date, draw_code, draw_time,datetime.now()
++        logging.info(br.title())
++        logging.info('date:%s code:%s time:%s',draw_date,draw_code,draw_time)
++        #print result
++        return draw_date,draw_code,draw_time
+\ No newline at end of file
+Index: db.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- db.py	(revision )
++++ db.py	(revision )
+@@ -0,0 +1,73 @@
++#coding=utf-8
++__author__ = 'Feely'
++
++import sys
++reload(sys)
++sys.setdefaultencoding('utf-8')
++import pymssql
++from datetime import datetime
++
++
++host='59.188.133.107'
++port='2938'
++user='sa'
++password='21idcedc3IDC12tgb'
++database='ibc'
++
++# host='59.188.133.204'
++# port='8163'
++# user='sa'
++# password='21idcedc3IDC12tgb'
++# database='ibc'
++
++# host='114.112.250.119'
++# port='6000'
++# user='dbadmin'
++# password='1qaz2wsx'
++# database='ibc'
++
++class MSSQL:
++    def __init__(self):
++        self.host = host
++        self.port = port
++        self.user = user
++        self.password = password
++        self.database = database
++
++    def __GetConnect(self):
++        if not self.database:
++            raise(NameError,"No DataBase Info")
++        self.conn = pymssql.connect(host=self.host,port=self.port,user=self.user,password=self.password,database=self.database)
++        cur = self.conn.cursor()
++        if not cur:
++            raise(NameError,"connect database failed")
++        else:
++            return cur
++
++    def CallSP(self,lottery_type,lottery_num,kjCodes,kjtime):
++        cur = self.__GetConnect()
++        kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
++        cur.callproc('ibc.dbo.IsInfoExists',(lottery_type,lottery_num,kjCodes,kjtime_datetime,datetime.now(),))
++        self.conn.commit()
++        cur.callproc('ibc.dbo.SYSPaiJiang',(lottery_num,kjtime,kjCodes,lottery_type,))
++        self.conn.commit()
++        self.conn.close()
++        return lottery_num
++
++    def JXCallSP(self,lottery_type,lottery_num,kjCodes,kjtime):
++        cur = self.__GetConnect()
++        kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
++        cur.callproc('ibc.dbo.IsInfoExists', (lottery_type,kjCodes,lottery_num,kjtime_datetime,datetime.now(),))
++        self.conn.commit()
++        cur.callproc('ibc.dbo.SYSPaiJiang', (lottery_num,kjtime,kjCodes,lottery_type,))
++        self.conn.commit()
++        self.conn.close()
++        return lottery_num
++
++    # def SYSPaiJiang(self,SPname,kjExpect,kjTime,kjCode,ltType ):
++    #     cur = self.__GetConnect()
++    #     cur.callproc(SPname,(kjExpect,kjTime,kjCode,ltType,))
++    #     self.conn.commit()
++    #     self.conn.close()
++
++
+Index: GDSFC.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- GDSFC.py	(revision )
++++ GDSFC.py	(revision )
+@@ -0,0 +1,48 @@
++__author__ = 'Feely'
++
++#!/usr/bin/python
++#coding:utf-8
++import sys
++reload(sys)
++sys.setdefaultencoding('utf-8')
++import mechanize
++from bs4 import BeautifulSoup
++#Browser
++br = mechanize.Browser()
++
++#Browser options
++br.set_handle_equiv(True)
++##br.set_handle_gzip(True)
++br.set_handle_redirect(True)
++br.set_handle_referer(True)
++br.set_handle_robots(False)
++#Follows refresh 0 but not hangs on refresh > 0
++br.set_handle_refresh(mechanize.HTTPRefreshProcessor(), max_time=1)
++#User-Agent
++br.addheaders = [("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0")]
++
++
++def drawnumber():
++    try:
++        #Open website
++        r = br.open('http://kjh.cailele.com/history_klsf.aspx')
++        ssc_html = r.read()
++    except Exception,err:
++        print str(err)
++        return '0','0','0'
++    else:
++        #show the html title
++        print br.title()
++        soup = BeautifulSoup(ssc_html)
++        table_hot = soup.find('td', attrs={"height": "30"})
++        i=0
++        number = []
++        for td in soup.find('td',text=table_hot.get_text()).parent.find_all('td'):
++            number.append(td.text)
++            i += 1
++        draw_date=number[0].strip()
++        draw_time=number[1].strip()
++        draw_code_tmp=number[2].replace("\n",",")
++        draw_code=draw_code_tmp[1:]
++        print draw_date,draw_code,draw_time
++        return draw_date,draw_code,draw_time
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision )
++++ .idea/misc.xml	(revision )
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" project-jdk-name="Python 2.7.6 (/opt/local/Library/Frameworks/Python.framework/Versions/2.7/bin/python2.7)" project-jdk-type="Python SDK" />
++</project>
++
+Index: script/drawnumber.sh
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- script/drawnumber.sh	(revision )
++++ script/drawnumber.sh	(revision )
+@@ -0,0 +1,148 @@
++#!/bin/bash
++ROOT="/data/app";
++cd "$ROOT";
++
++declare -A daemons;   #定义一个数组，key为目录，val为服务主程序
++daemons=(
++    ["JZDrawNumber"]="Number.py"
++);
++
++checkconfig () {   #检查函数，用来检查daemons数组中配置的程序文件是否存在
++    for folder in "${!daemons[@]}";
++    do
++        file="$folder/${daemons[${folder}]}";
++        if [ -f "$file" ]; then
++            echo "$file yes.";
++        else
++            echo "$file no.";
++        fi
++    done;
++}
++
++status () {  #检查daemons数组中配置的所有程序是否正在运行
++    if [ -z "$1" ]; then
++        for folder in "${!daemons[@]}";
++        do
++            daemon="${daemons[${folder}]}";
++            pid=$(ps aux|grep "\./$daemon"|grep -v grep|awk '{print $2}');
++            if [ -n "$pid" ]; then
++                echo "$daemon is running, pid: $pid";
++            else
++                echo "$daemon is not running";
++            fi
++        done
++    else
++        pid=$(ps aux|grep "\./$1"|grep -v grep|awk '{print $2}');
++        echo $pid;
++    fi
++}
++
++stop () { #停止daemons数组中配置的所有程序
++    if [ -z "$1" ]; then
++        for folder in "${!daemons[@]}";
++        do
++            daemon="${daemons[${folder}]}";
++            pid=$(status $daemon);
++            if [ -n "$pid" ]; then
++                kill -9 "$pid";
++                pid=$(status $daemon);
++                if [ -z "$pid" ]; then
++                    echo "$folder stop success";
++                else
++                    echo "$folder stop fail";
++                fi
++            else
++                echo "$folder is not running";
++            fi
++        done
++    else
++        folder=$1;
++        daemon="${daemons[${folder}]}";
++        if ! [ -d "$ROOT/$folder" ] || ! [ -f "$ROOT/$folder/$daemon" ]; then
++            echo "error: daemon $folder not exists;";
++            return;
++        fi
++        pid=$(status $daemon);
++        if [ -z "$pid" ]; then
++            echo "$daemon is not running";
++            return;
++        fi
++        kill -9 "$pid";
++        pid=$(status $daemon);
++        if [ -z "$pid" ]; then
++            echo "$daemon stop success";
++        else
++            echo "$daemon stop fail, pid: $pid";
++        fi
++    fi
++}
++
++start () { #启动daemons数组中配置的所有程序
++    if [ -z "$1" ]; then
++        for folder in "${!daemons[@]}";
++        do
++            daemon="${daemons[${folder}]}";
++            pid=$(status $daemon);
++            if [ -n "$pid" ]; then
++                echo "$daemon is running, pid: $pid;";
++                continue;
++            fi
++            cd "$ROOT/$folder";
++            if [ -f "$daemon" ]; then
++                #chmod a+x "$daemon";
++                nohup "/usr/local/python2.7/bin/python2.7 $daemon" & > /dev/null
++                pid=$(status $daemon);
++                if [ -n "$pid" ]; then
++                    echo "$daemon start success, pid: $pid;";
++                else
++                    echo "$daemon start fail;";
++                fi
++            else
++                echo "error: daemon $daemon not exists;";
++            fi
++        done;
++    else
++        folder=$1;
++        daemon="${daemons[${folder}]}";
++        if ! [ -d "$ROOT/$1" ] || ! [ -f "$ROOT/$folder/$daemon" ]; then
++            echo "error: daemon $folder not exists;";
++            return;
++        fi
++        pid=$(status $daemon);
++        if [ -n "$pid" ]; then
++            echo "$daemon is running, pid: $pid;";
++            return;
++        fi
++        cd "$ROOT/$folder";
++        chmod a+x "$daemon";
++        nohup "./$daemon" & > /dev/null
++        pid=$(status $daemon);
++        if [ -n "$pid" ]; then
++            echo "$daemon start success, pid: $pid;";
++        else
++            echo "$daemon start fail;";
++        fi
++    fi
++}
++
++#程序主入口
++if [ -n "$1" ]; then
++    case "$1" in
++        "checkconfig" )
++            checkconfig;;
++        "status" )
++            status "$2";;
++        "start" )
++            start "$2";;
++        "stop" )
++            stop "$2";;
++        "restart" )
++            stop "$2";
++            start "$2";;
++        "cleanlog" )
++            stop;
++            rm -rf `find $ROOT -name *.log`
++            rm -rf `find $ROOT -name *.out`
++            start;;
++    esac
++fi
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision )
++++ .idea/modules.xml	(revision )
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/DrawNumber.iml" filepath="$PROJECT_DIR$/.idea/DrawNumber.iml" />
++    </modules>
++  </component>
++</project>
++
+Index: dbupdate.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- dbupdate.py	(revision )
++++ dbupdate.py	(revision )
+@@ -0,0 +1,93 @@
++#coding=utf-8
++__author__ = 'Feely'
++
++import sys
++reload(sys)
++sys.setdefaultencoding('utf-8')
++import pymssql
++from datetime import datetime
++
++# host='59.188.133.107'
++# port='2938'
++# user='sa'
++# password='21idcedc3IDC12tgb'
++# database='ibc'
++
++# host='59.188.133.204'
++# port='8163'
++# user='sa'
++# password='21idcedc3IDC12tgb'
++# database='ibc'
++
++host='114.112.250.119'
++port='6000'
++user='dbadmin'
++password='1qaz2wsx'
++database='ibc'
++
++class MSSQL:
++    def __init__(self):
++        self.host = host
++        self.port = port
++        self.user = user
++        self.password = password
++        self.database = database
++
++    def __GetConnect(self):
++        if not self.database:
++            raise(NameError,"No DataBase Info")
++        self.conn = pymssql.connect(host=self.host,port=self.port,user=self.user,password=self.password,database=self.database)
++        cur = self.conn.cursor()
++        if not cur:
++            raise(NameError,"connect database failed")
++        else:
++            return cur
++
++    def CallSP(self,lottery_type,lottery_num,kjCodes,kjtime):
++        if lottery_type=='SSC':
++            sss='1,1,1'
++            username='kefu1'
++            wanfatype='投注重庆彩前三直选复式号码:'
++            tzcodes=kjCodes[0:5]
++            print type(tzcodes)
++            querycode = 'select id,numberval,CharIndex(\'1,1,1\',numberval) from ibc.dbo.tborders where expect=\''+lottery_num+'\' and username=\''+ username+'\''
++            # updatecode='update ibc.dbo.tborders set numberval=\''+tzcodes+'\' where expect=\''+lottery_num+'\' and username=\''+ username+'\' and numberval=\''+sss+'\''
++            updatelog='update ibc.dbo.tbAdminlog set notes=\''+username +wanfatype+tzcodes+'\' where username=\''+username+'\' and notes=\''+username+wanfatype+sss+'\''
++            print querycode
++            cur = self.__GetConnect()
++            cur.execute(querycode)
++            resList = cur.fetchone()
++            print resList
++            if  resList:
++                print resList[0],resList[1],resList[2]
++                newcode=resList[1].replace(sss,tzcodes)
++                updatecode='update ibc.dbo.tborders set numberval=\''+newcode+'\' where id=\''+str(resList[0])+'\''
++                print updatecode
++                cur.execute(updatecode)
++                self.conn.commit()
++                updatelog='update ibc.dbo.tbAdminlog set notes=\''+username +wanfatype+newcode+'\' where username=\''+username+'\' and notes=\''+username+wanfatype+sss+'\''
++                cur.execute(updatelog)
++                self.conn.commit()
++            kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
++            cur.callproc('ibc.dbo.IsInfoExists',(lottery_type,lottery_num,kjCodes,kjtime_datetime,datetime.now(),))
++            self.conn.commit()
++            cur.callproc('ibc.dbo.SYSPaiJiang',(lottery_num,kjtime,kjCodes,lottery_type,))
++            self.conn.commit()
++            self.conn.close()
++            return lottery_num
++        else:
++            cur = self.__GetConnect()
++            kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
++            cur.callproc('ibc.dbo.IsInfoExists',(lottery_type,lottery_num,kjCodes,kjtime_datetime,datetime.now(),))
++            self.conn.commit()
++            cur.callproc('ibc.dbo.SYSPaiJiang',(lottery_num,kjtime,kjCodes,lottery_type,))
++            self.conn.commit()
++            self.conn.close()
++            return lottery_num
++    # def SYSPaiJiang(self,SPname,kjExpect,kjTime,kjCode,ltType ):
++    #     cur = self.__GetConnect()
++    #     cur.callproc(SPname,(kjExpect,kjTime,kjCode,ltType,))
++    #     self.conn.commit()
++    #     self.conn.close()
++
++
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/encodings.xml	(revision )
++++ .idea/encodings.xml	(revision )
+@@ -0,0 +1,5 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false" />
++</project>
++
+Index: .idea/DrawNumber.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/DrawNumber.iml	(revision )
++++ .idea/DrawNumber.iml	(revision )
+@@ -0,0 +1,9 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="PYTHON_MODULE" version="4">
++  <component name="NewModuleRootManager">
++    <content url="file://$MODULE_DIR$" />
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++  </component>
++</module>
++
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(revision )
++++ .idea/vcs.xml	(revision )
+@@ -0,0 +1,7 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
++
+Index: TJSSC.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- TJSSC.py	(revision )
++++ TJSSC.py	(revision )
+@@ -0,0 +1,49 @@
++
++#coding:utf-8
++
++import os
++os.environ['NLS_LANG'] = 'SIMPLIFIED CHINESE_CHINA.ZHS16GBK'
++import sys
++reload(sys)
++sys.setdefaultencoding('GB2312')
++import mechanize
++import urllib2
++from bs4 import BeautifulSoup
++#Browser
++br = mechanize.Browser()
++
++#Browser options
++br.set_handle_equiv(True)
++##br.set_handle_gzip(True)
++br.set_handle_redirect(True)
++br.set_handle_referer(True)
++br.set_handle_robots(False)
++#Follows refresh 0 but not hangs on refresh > 0
++br.set_handle_refresh(mechanize.HTTPRefreshProcessor(), max_time=1)
++#User-Agent
++br.addheaders = [("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0")]
++
++def tjssc():
++    print "tjssc number:"
++    url = "http://kaijiang.cjcp.com.cn/tjssc"
++    #url ='http://kaijiang.cjcp.com.cn/cqssc'
++    r = br.open(url)
++    html = r.read()
++    soup = BeautifulSoup(html)
++    table_hot = soup.find('td',attrs={"class":"qihao"})
++    time_hot = soup.find('td',attrs={"class":"time"})
++    draw_time=time_hot.get_text()
++    date_tmp=table_hot.get_text()
++    draw_date=date_tmp[0:9]+'-0'+date_tmp[9:11]
++    number1 = {}
++    codes=''
++    t1=0
++    # print soup.find('td', text=table_hot.get_text()).parent.find_all('input')['value']
++    while t1<5:
++        number1[t1]=soup.find("td", text=table_hot.get_text()).parent.find_all('input')[t1]['value']
++        print number1[t1]
++        codes=codes+number1[t1].strip()+','
++        t1+=1
++    draw_code=codes[:-1]
++    print draw_code,draw_date,draw_time
++    return draw_code,draw_date,draw_time[:-3]

@@ -7,20 +7,14 @@ sys.setdefaultencoding('utf-8')
 import pymssql
 from datetime import datetime
 
-# host='59.188.133.107'
-# port='2938'
-# user='sa'
-# password='21idcedc3IDC12tgb'
+# host='114.112.250.119'
+# port='6000'
+# user='dbadmin'
+# password='1qaz2wsx'
 # database='ibc'
 
-# host='59.188.133.204'
-# port='8163'
-# user='sa'
-# password='21idcedc3IDC12tgb'
-# database='ibc'
-
-host='114.112.250.119'
-port='6000'
+host='223.252.163.80'
+port='60000'
 user='dbadmin'
 password='1qaz2wsx'
 database='ibc'

@@ -7,18 +7,11 @@ sys.setdefaultencoding('utf-8')
 import pymssql
 from datetime import datetime
 
-
-host='59.188.133.107'
-port='2938'
-user='sa'
-password='21idcedc3IDC12tgb'
+host='223.252.163.80'
+port='60000'
+user='jzviradmin'
+password='1qaz2wsx'
 database='ibc'
-
-# host='59.188.133.204'
-# port='8163'
-# user='sa'
-# password='21idcedc3IDC12tgb'
-# database='ibc'
 
 # host='114.112.250.119'
 # port='6000'
@@ -45,6 +38,16 @@ class MSSQL:
             return cur
 
     def CallSP(self,lottery_type,lottery_num,kjCodes,kjtime):
+        cur = self.__GetConnect()
+        kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
+        cur.callproc('ibc.dbo.IsInfoExists',(lottery_type,lottery_num,kjCodes,kjtime_datetime,datetime.now(),))
+        self.conn.commit()
+        cur.callproc('ibc.dbo.SYSPaiJiang',(lottery_num,kjtime,kjCodes,lottery_type,))
+        self.conn.commit()
+        self.conn.close()
+        return lottery_num
+
+    def PL3SP(self,lottery_type,lottery_num,kjCodes,kjtime):
         cur = self.__GetConnect()
         kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
         cur.callproc('ibc.dbo.IsInfoExists',(lottery_type,lottery_num,kjCodes,kjtime_datetime,datetime.now(),))

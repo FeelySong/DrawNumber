@@ -46,3 +46,4 @@ def drawnumber():
         draw_code=draw_code_tmp[1:]
         print draw_date,draw_code,draw_time
         return draw_date,draw_code,draw_time
+
