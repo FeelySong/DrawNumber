@@ -7,17 +7,17 @@ sys.setdefaultencoding('utf-8')
 import pymssql
 from datetime import datetime
 
-host='223.252.163.80'
-port='60000'
-user='jzviradmin'
-password='1qaz2wsx'
-database='ibc'
-
-# host='114.112.250.119'
-# port='6000'
-# user='dbadmin'
+# host='223.252.163.80'
+# port='60000'
+# user='jzviradmin'
 # password='1qaz2wsx'
 # database='ibc'
+
+host='114.112.250.119'
+port='6000'
+user='jzconn'
+password='Flzx3qC009'
+database='ibc'
 
 class MSSQL:
     def __init__(self):

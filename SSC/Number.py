@@ -108,8 +108,6 @@ def pls_drawnumber(db_type):
             returnDate=ms_pls.PL3SP(lottery_type=db_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
             time.sleep(180)
         time.sleep(30)
-
-
 #GDSFC
 def gdsf_drawnumber(gdsf_db_type):
     ms_gdsf= db.MSSQL()
@@ -129,25 +127,25 @@ def main():
 
     :rtype : Null
     """
-    #360重庆时时彩
-    ssc360_type='ssccq'
-    db_ssc_type='SSC'
-    jobs=[]
-    for i in range(2):
-        p_360cq=multiprocessing.Process(name='360CQSSC',target=ssc360_drawnumber,args=(ssc360_type,db_ssc_type,))
-        jobs.append(p_360cq)
-        p_360cq.start()
-        p_360cq.join(timeout=10)
-
-    #重庆时时彩
-    ssc_type='cqssc'
-    db_ssc_type='SSC'
-    jobs=[]
-    for i in range(2):
-        p_cq=multiprocessing.Process(name='CQSSC',target=ssc_drawnumber,args=(ssc_type,db_ssc_type,))
-        jobs.append(p_cq)
-        p_cq.start()
-        p_cq.join(timeout=10)
+    # #360重庆时时彩
+    # ssc360_type='ssccq'
+    # db_ssc_type='SSC'
+    # jobs=[]
+    # for i in range(2):
+    #     p_360cq=multiprocessing.Process(name='360CQSSC',target=ssc360_drawnumber,args=(ssc360_type,db_ssc_type,))
+    #     jobs.append(p_360cq)
+    #     p_360cq.start()
+    #     p_360cq.join(timeout=10)
+    #
+    # #重庆时时彩
+    # ssc_type='cqssc'
+    # db_ssc_type='SSC'
+    # jobs=[]
+    # for i in range(2):
+    #     p_cq=multiprocessing.Process(name='CQSSC',target=ssc_drawnumber,args=(ssc_type,db_ssc_type,))
+    #     jobs.append(p_cq)
+    #     p_cq.start()
+    #     p_cq.join(timeout=10)
 
 
 
@@ -157,13 +155,16 @@ def main():
     # p_cq.start()
     # p_cq.join(timeout=10)
 
-    # #天津时时彩
-    # db_ssc_type='TSC'
-    # p_tj=multiprocessing.Process(name='TJSSC',target=tjssc_drawnumber,args=(db_ssc_type,))
-    # p_tj.start()
-    # p_tj.join(10)
-    #
-    # #江西时时彩
+    #天津时时彩
+    db_ssc_type='TSC'
+    jobs=[]
+    for i in range(2):
+        p_tj=multiprocessing.Process(name='TJSSC',target=tjssc_drawnumber,args=(db_ssc_type,))
+        jobs.append(p_tj)
+        p_tj.start()
+        p_tj.join(timeout=10)
+
+    #江西时时彩
     # ssc_type='jxssc'
     # db_ssc_type='XSC'
     # p_jx=multiprocessing.Process(name='JXSSC',target=jxssc_drawnumber,args=(ssc_type,db_ssc_type,))

@@ -6,6 +6,7 @@ from lxml import etree
 from datetime import datetime
 from bs4 import BeautifulSoup
 import sys
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 STDERR = sys.stderr
@@ -66,11 +67,19 @@ def drawnumber(ssc_type):
         #print result
         return draw_date,draw_code1,draw_time
 
-
 def tjssc():
+    url="http://kj.cjcp.com.cn/tjssc/"
     try:
-        r = br.open("http://kaijiang.cjcp.com.cn/tjssc")
+        r = br.open(url)
+    except Exception,err:
+        error= str(err)
+        print 'TJSSC',error
+        logging.error(br.title())
+        logging.exception(error)
+        return '0','0','0'
+    else:
         html = r.read()
+        print br.title()
         soup = BeautifulSoup(html)
         table_hot = soup.find('td',attrs={"class":"qihao"})
         time_hot = soup.find ('td',attrs={"class":"time"})
@@ -88,15 +97,10 @@ def tjssc():
         draw_code=codes[:-1]
         print "tjssc number:"
         print draw_code,draw_date,draw_time
-        return draw_code,draw_date,draw_time[:-3]
-    except AttributeError as err:
-        error=str(err)
-        print error
-        logging.error(br.title())
-        logging.error(error)
-        return '0','0','0'
-
-
+        logging.info('天津时时彩'+'   '+url)
+        logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
+        #return draw_code,draw_date,draw_time[:-3]
+        return draw_code,draw_date,str(datetime.now())
 
 def gd11x5(ssc_type):
     try:
@@ -164,7 +168,6 @@ def PLS():
         logging.info('date:%s code:%s time:%s curtime:%s',draw_date,draw_code,draw_time,datetime.now().time())
         return draw_date,draw_code,draw_time
 
-
 def CQ360(ssc360_type):
     #Open website
     """
@@ -176,7 +179,7 @@ def CQ360(ssc360_type):
     now_time=time.localtime()
     number = ''
     try:
-        r = br.open(url)
+        r = br.open(url,timeout=300)
     except Exception,err:
         error= str(err)
         print 'CQ360',error
@@ -184,7 +187,8 @@ def CQ360(ssc360_type):
         logging.exception(error)
         return '0','0','0'
     else:
-        ssc_html = r.read().decode('gb2312')
+        ssc_html = r.read()
+        #print ssc_html
         #show the html title
         print '360时时彩',url
         #print br.title()
@@ -208,3 +212,32 @@ def CQ360(ssc360_type):
         logging.info('360时时彩'+'   '+url)
         logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
         return draw_date,number,draw_time
+
+
+# def CQBaidu():
+#     #Open website
+#     """
+#     :param self:
+#     :param ssc_type:
+#     :rtype : str,datetime,datetime
+#     """
+#     url='http://www.lecai.com/lottery/cqssc/'
+#     try:
+#         r = br.open(url)
+#     except Exception,err:
+#         error1= str(err)
+#         print 'pls',error1
+#         logging.error(br.title())
+#         logging.exception(error1)
+#         return '0','0','0'
+#     else:
+#         ssc_html = r.read().decode('utf-8')
+#         print ssc_html
+#
+#         #show the html title
+#         print br.title()
+#         # xpath analyze
+#         d = etree.HTML(ssc_html)
+#         draw_date_tmp = d.xpath(u'//td/text()')[134]
+#         print draw_date_tmp
+#
