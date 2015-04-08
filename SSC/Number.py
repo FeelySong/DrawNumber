@@ -2,6 +2,7 @@
 
 import time
 import multiprocessing
+from multiprocessing.dummy import Pool as ThreadPool
 import sys
 
 import DrawNO
@@ -95,6 +96,7 @@ def tjssc_drawnumber(db_ssc_type):
             returnDate=ms_jxssc.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
             time.sleep(180)
         time.sleep(30)
+
 #排列三
 def pls_drawnumber(db_type):
     ms_pls= db.MSSQL()
@@ -185,4 +187,11 @@ def main():
     # p_11x5.join(10)
 
 if __name__ == "__main__":
-    main()
+    #main()
+    db_ssc_type='TSC'
+    map_parameters = []
+    map_parameters.append(db_ssc_type)
+    pool=ThreadPool(2)
+    pool.map(tjssc_drawnumber,map_parameters)
+    pool.close()
+    pool.join(timeout=10)
