@@ -2,12 +2,13 @@
 
 import time
 import multiprocessing
-from multiprocessing.dummy import Pool as ThreadPool
+#from multiprocessing.dummy import Pool as ThreadPool
 import sys
-
 import DrawNO
 import db
+import log
 import GDSFC
+
 
 
 reload(sys)
@@ -85,18 +86,23 @@ def gd11x5(ssc_type,db_ssc_type):
         time.sleep(30)
 
 def tjssc_drawnumber(db_ssc_type):
-    ms_jxssc= db.MSSQL()
+    ms_tjssc= db.MSSQL()
     returnDate=''
     while True:
-        #调用爬虫，获取开奖信息
-        draw_code, draw_date, draw_time_str= DrawNO.tjssc()
-        if  draw_code == '0' or draw_date <= returnDate:
-            pass
-        else:
-            returnDate=ms_jxssc.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
-            time.sleep(180)
-        time.sleep(30)
-
+        try:
+            #调用爬虫，获取开奖信息
+            draw_code, draw_date, draw_time_str= DrawNO.tjssc()
+            if  draw_code == '0' or draw_date <= returnDate:
+                pass
+            else:
+                returnDate=ms_tjssc.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
+                time.sleep(180)
+            time.sleep(30)
+        except Exception as e:
+            print e
+            log.logging.error(e)
+            time.sleep(5)
+            continue
 #排列三
 def pls_drawnumber(db_type):
     ms_pls= db.MSSQL()
@@ -187,11 +193,11 @@ def main():
     # p_11x5.join(10)
 
 if __name__ == "__main__":
-    #main()
-    db_ssc_type='TSC'
-    map_parameters = []
-    map_parameters.append(db_ssc_type)
-    pool=ThreadPool(2)
-    pool.map(tjssc_drawnumber,map_parameters)
-    pool.close()
-    pool.join(timeout=10)
+    main()
+    # db_ssc_type='TSC'
+    # #map_parameters = []
+    # #map_parameters.append(db_ssc_type)
+    # pool=ThreadPool(2)
+    # pool.map(tjssc_drawnumber(db_ssc_type))
+    # pool.close()
+    # pool.join(timeout=10)

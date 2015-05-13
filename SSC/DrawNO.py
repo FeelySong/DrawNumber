@@ -7,14 +7,15 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import sys
 
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 STDERR = sys.stderr
 import mechanize
 import cookielib
-import logging
+import log
 
-socket.setdefaulttimeout(300)
+socket.setdefaulttimeout(30)
 
 #Browser
 br = mechanize.Browser()
@@ -31,9 +32,6 @@ br.set_handle_robots(False)
 br.set_handle_refresh(mechanize.HTTPRefreshProcessor(), max_time=1)
 #User-Agent
 br.addheaders = [("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:29.0) Gecko/20100101 Firefox/29.0")]
-
-logging.basicConfig(filename='/tmp/kaijiang.log',level=logging.INFO)
-logging.basicConfig(filename='/tmp/errkj.log',level=logging.ERROR)
 
 def drawnumber(ssc_type):
     #Open website
@@ -69,38 +67,30 @@ def drawnumber(ssc_type):
 
 def tjssc():
     url="http://kj.cjcp.com.cn/tjssc/"
-    try:
-        r = br.open(url)
-    except Exception,err:
-        error= str(err)
-        print 'TJSSC',error
-        logging.error(br.title())
-        logging.exception(error)
-        return '0','0','0'
-    else:
-        html = r.read()
-        print br.title()
-        soup = BeautifulSoup(html)
-        table_hot = soup.find('td',attrs={"class":"qihao"})
-        time_hot = soup.find ('td',attrs={"class":"time"})
-        draw_time=time_hot.get_text()
-        date_tmp=table_hot.get_text()
-        draw_date=date_tmp[0:8]+'-0'+date_tmp[9:11]
-        number1 = {}
-        codes=''
-        t1=0
-        # print soup.find('td', text=table_hot.get_text()).parent.find_all('input')['value']
-        while t1<5:
-            number1[t1]=soup.find("td", text=table_hot.get_text()).parent.find_all('input')[t1]['value']
-            codes=codes+number1[t1].strip()+','
-            t1+=1
-        draw_code=codes[:-1]
-        print "tjssc number:"
-        print draw_code,draw_date,draw_time
-        logging.info('天津时时彩'+'   '+url)
-        logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
-        return draw_code,draw_date,draw_time[:-3]
-        #return draw_code,draw_date,str(datetime.now())
+    r = br.open(url,timeout=10)
+    html = r.read()
+    print br.title()
+    soup = BeautifulSoup(html)
+    table_hot = soup.find('td',attrs={"class":"qihao"})
+    time_hot = soup.find ('td',attrs={"class":"time"})
+    draw_time=time_hot.get_text()
+    date_tmp=table_hot.get_text()
+    draw_date=date_tmp[0:8]+'-0'+date_tmp[9:11]
+    number1 = {}
+    codes=''
+    t1=0
+    # print soup.find('td', text=table_hot.get_text()).parent.find_all('input')['value']
+    while t1<5:
+        number1[t1]=soup.find("td", text=table_hot.get_text()).parent.find_all('input')[t1]['value']
+        codes=codes+number1[t1].strip()+','
+        t1+=1
+    draw_code=codes[:-1]
+    print "tjssc number:"
+    print draw_code,draw_date,draw_time
+    logging.info('天津时时彩'+'   '+url)
+    logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
+    return draw_code,draw_date,draw_time[:-3]
+    #return draw_code,draw_date,str(datetime.now())
 
 def gd11x5(ssc_type):
     try:
@@ -108,8 +98,8 @@ def gd11x5(ssc_type):
     except Exception,err:
         error=str(err)
         print error
-        logging.error(br.title())
-        logging.error(error)
+        log.logging.error(br.title())
+        log.logging.error(error)
         return '0','0','0'
     else:
         ssc_html = r.read().decode('utf-8')
@@ -125,8 +115,8 @@ def gd11x5(ssc_type):
         #draw_code1=draw_code[0]+','+draw_code[1]+','+draw_code[2]+','+draw_code[3]+','+draw_code[4]
         draw_time=result[71:87].strip()
         print draw_date, draw_code, draw_time,datetime.now()
-        logging.info(br.title())
-        logging.info('date:%s code:%s time:%s',draw_date,draw_code,draw_time)
+        log.logging.info(br.title())
+        log.logging.info('date:%s code:%s time:%s',draw_date,draw_code,draw_time)
         #print result
         return draw_date,draw_code,draw_time
 
@@ -179,12 +169,12 @@ def CQ360(ssc360_type):
     now_time=time.localtime()
     number = ''
     try:
-        r = br.open(url,timeout=300)
+        r = br.open(url,timeout=10)
     except Exception,err:
         error= str(err)
         print 'CQ360',error
-        logging.error(br.title())
-        logging.exception(error)
+        log.logging.error(br.title())
+        log.logging.exception(error)
         return '0','0','0'
     else:
         ssc_html = r.read()
@@ -227,8 +217,8 @@ def CQ360(ssc360_type):
 #     except Exception,err:
 #         error1= str(err)
 #         print 'pls',error1
-#         logging.error(br.title())
-#         logging.exception(error1)
+#         log.logging.error(br.title())
+#         log.logging.exception(error1)
 #         return '0','0','0'
 #     else:
 #         ssc_html = r.read().decode('utf-8')
@@ -241,3 +231,7 @@ def CQ360(ssc360_type):
 #         draw_date_tmp = d.xpath(u'//td/text()')[134]
 #         print draw_date_tmp
 #
+
+# if __name__ == "__main__":
+#     tjssc()
+#     print 'su'
