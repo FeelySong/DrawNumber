@@ -7,7 +7,7 @@ sys.setdefaultencoding('utf-8')
 import pymssql
 from datetime import datetime
 
-host='103.248.21.164'
+host='dbmaster.virjz.com'
 port='60000'
 user='jzviradmin'
 password='1qaz2wsx'
