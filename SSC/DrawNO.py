@@ -46,8 +46,8 @@ def drawnumber(ssc_type):
     except Exception,err:
         error1= str(err)
         print ssc_type,error1
-        log.log.logging.error(br.title())
-        log.log.logging.exception(error1)
+        log.logging.error(br.title())
+        log.logging.exception(error1)
         return '0','0','0'
     else:
         ssc_html = r.read().decode('utf-8')
@@ -65,33 +65,6 @@ def drawnumber(ssc_type):
         log.logging.info('date:%s code:%s time:%s curtime:%s',draw_date,draw_code1,draw_time,datetime.now().time())
         #print result
         return draw_date,draw_code1,draw_time
-
-def tjsscbak():
-    url="http://kj.cjcp.com.cn/tjssc/"
-    r = br.open(url,timeout=10)
-    html = r.read()
-    print br.title()
-    soup = BeautifulSoup(html)
-    table_hot = soup.find('td',attrs={"class":"qihao"})
-    time_hot = soup.find ('td',attrs={"class":"time"})
-    draw_time=time_hot.get_text()
-    date_tmp=table_hot.get_text()
-    draw_date=date_tmp[0:8]+'-0'+date_tmp[9:11]
-    number1 = {}
-    codes=''
-    t1=0
-    # print soup.find('td', text=table_hot.get_text()).parent.find_all('input')['value']
-    while t1<5:
-        number1[t1]=soup.find("td", text=table_hot.get_text()).parent.find_all('input')[t1]['value']
-        codes=codes+number1[t1].strip()+','
-        t1+=1
-    draw_code=codes[:-1]
-    print "tjssc number:"
-    print draw_code,draw_date,draw_time
-    log.logging.info('天津时时彩'+'   '+url)
-    log.logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
-    return draw_code,draw_date,draw_time[:-3]
-    #return draw_code,draw_date,str(datetime.now())
 
 def tjssc():
     #Open website
@@ -131,14 +104,41 @@ def tjssc():
         #print result
         return number,draw_date,draw_time
 
+def tjsscbak():
+    url="http://kj.cjcp.com.cn/tjssc/"
+    r = br.open(url,timeout=10)
+    html = r.read()
+    print br.title()
+    soup = BeautifulSoup(html)
+    table_hot = soup.find('td',attrs={"class":"qihao"})
+    time_hot = soup.find ('td',attrs={"class":"time"})
+    draw_time=time_hot.get_text()
+    date_tmp=table_hot.get_text()
+    draw_date=date_tmp[0:8]+'-0'+date_tmp[9:11]
+    number1 = {}
+    codes=''
+    t1=0
+    # print soup.find('td', text=table_hot.get_text()).parent.find_all('input')['value']
+    while t1<5:
+        number1[t1]=soup.find("td", text=table_hot.get_text()).parent.find_all('input')[t1]['value']
+        codes=codes+number1[t1].strip()+','
+        t1+=1
+    draw_code=codes[:-1]
+    print "tjssc number:"
+    print draw_code,draw_date,draw_time
+    log.logging.info('天津时时彩'+'   '+url)
+    log.logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
+    return draw_code,draw_date,draw_time[:-3]
+    #return draw_code,draw_date,str(datetime.now())
+
 def gd11x5(ssc_type):
     try:
         r = br.open('http://data.shishicai.cn/'+ssc_type+'/haoma/')
     except Exception,err:
         error=str(err)
         print error
-        log.log.logging.error(br.title())
-        log.log.logging.error(error)
+        log.logging.error(br.title())
+        log.logging.error(error)
         return '0','0','0'
     else:
         ssc_html = r.read().decode('utf-8')
@@ -154,8 +154,8 @@ def gd11x5(ssc_type):
         #draw_code1=draw_code[0]+','+draw_code[1]+','+draw_code[2]+','+draw_code[3]+','+draw_code[4]
         draw_time=result[71:87].strip()
         print draw_date, draw_code, draw_time,datetime.now()
-        log.log.logging.info(br.title())
-        log.log.logging.info('date:%s code:%s time:%s',draw_date,draw_code,draw_time)
+        log.logging.info(br.title())
+        log.logging.info('date:%s code:%s time:%s',draw_date,draw_code,draw_time)
         #print result
         return draw_date,draw_code,draw_time
 
@@ -212,8 +212,8 @@ def CQ360(ssc360_type):
     except Exception,err:
         error= str(err)
         print 'CQ360',error
-        log.log.logging.error(br.title())
-        log.log.logging.exception(error)
+        log.logging.error(br.title())
+        log.logging.exception(error)
         return '0','0','0'
     else:
         ssc_html = r.read()
@@ -256,8 +256,8 @@ def CQ360(ssc360_type):
 #     except Exception,err:
 #         error1= str(err)
 #         print 'pls',error1
-#         log.log.logging.error(br.title())
-#         log.log.logging.exception(error1)
+#         log.logging.error(br.title())
+#         log.logging.exception(error1)
 #         return '0','0','0'
 #     else:
 #         ssc_html = r.read().decode('utf-8')
