@@ -1,0 +1,2768 @@
+Index: SJ/app/admin/eWebEditor/style/light.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/light.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/light.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_yk.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_yk.php	(date 1434421916000)
++++ SJ/app/admin/total_yk.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/default_getfastdata.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/default_getfastdata.php	(date 1434421916000)
++++ SJ/app/default_getfastdata.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/mx/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/mx/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/mx/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_lista.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_lista.php	(date 1434421916000)
++++ SJ/app/users_lista.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/help_game.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/help_game.php	(date 1434421916000)
++++ SJ/app/help_game.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_shssl.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_shssl.php	(date 1434421916000)
++++ SJ/app/play_shssl.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/default_logout.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/default_logout.php	(date 1434421916000)
++++ SJ/app/admin/default_logout.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/intro1.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/intro1.php	(date 1434421916000)
++++ SJ/app/admin/intro1.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_playinfo.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_playinfo.php	(date 1434421916000)
++++ SJ/app/history_playinfo.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_jxssc.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_jxssc.php	(date 1434421916000)
++++ SJ/app/play_jxssc.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/default_menu2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/default_menu2.php	(date 1434421916000)
++++ SJ/app/default_menu2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/playact.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/playact.php	(date 1434421916000)
++++ SJ/app/playact.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/fullscreen.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/fullscreen.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/fullscreen.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/admin_logs.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/admin_logs.php	(date 1434421916000)
++++ SJ/app/admin/admin_logs.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/css/play.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/css/play.css	(date 1434421916000)
++++ SJ/app/css/play.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/message.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/message.php	(date 1434421916000)
++++ SJ/app/admin/message.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_info.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_info.php	(date 1434421916000)
++++ SJ/app/users_info.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/css/line2.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/css/line2.css	(date 1434421916000)
++++ SJ/app/css/line2.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/css/css.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/css/css.css	(date 1434421916000)
++++ SJ/app/admin/css/css.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/getXML/jxc.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/getXML/jxc.php	(date 1434421916000)
++++ SJ/kj/getXML/jxc.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query11.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query11.php	(date 1434421916000)
++++ SJ/app/admin/query11.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/playact514.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/playact514.php	(date 1434421916000)
++++ SJ/app/playact514.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/mem_logs.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/mem_logs.php	(date 1434421916000)
++++ SJ/app/admin/mem_logs.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/plan.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/plan.php	(date 1434421916000)
++++ SJ/app/admin/plan.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/backup.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/backup.php	(date 1434421916000)
++++ SJ/app/admin/backup.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/querya.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/querya.php	(date 1434421916000)
++++ SJ/app/admin/querya.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/manager_pass.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/manager_pass.php	(date 1434421916000)
++++ SJ/app/admin/manager_pass.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_cz.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_cz.php	(date 1434421916000)
++++ SJ/app/admin/account_cz.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_rebate.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_rebate.php	(date 1434421916000)
++++ SJ/app/admin/total_rebate.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/default_getpass2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/default_getpass2.php	(date 1434421916000)
++++ SJ/app/default_getpass2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/mini.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/mini.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/mini.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/css/line.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/css/line.css	(date 1434421916000)
++++ SJ/app/css/line.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_set.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_set.php	(date 1434421916000)
++++ SJ/app/admin/lottery_set.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/message_edit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/message_edit.php	(date 1434421916000)
++++ SJ/app/admin/message_edit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/jquery.main.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/jquery.main.js	(date 1434421916000)
++++ SJ/app/admin/jquery.main.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/red/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/red/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/red/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/js/lang.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/js/lang.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/js/lang.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_add.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_add.php	(date 1434421916000)
++++ SJ/app/history_add.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lockip.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lockip.php	(date 1434421916000)
++++ SJ/app/admin/lockip.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/mem_edit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/mem_edit.php	(date 1434421916000)
++++ SJ/app/admin/mem_edit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/queryb.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/queryb.php	(date 1434421916000)
++++ SJ/app/admin/queryb.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/queryauto.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/queryauto.php	(date 1434421916000)
++++ SJ/app/admin/queryauto.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/blue/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/blue/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/blue/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history1.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history1.php	(date 1434421916000)
++++ SJ/app/history1.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/flash.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/flash.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/flash.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query7.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query7.php	(date 1434421916000)
++++ SJ/kj/query7.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/intro3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/intro3.php	(date 1434421916000)
++++ SJ/app/admin/intro3.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/coolblue/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/coolblue/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/coolblue/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query8.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query8.php	(date 1434421916000)
++++ SJ/kj/query8.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/_example/popup.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/_example/popup.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/_example/popup.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_check.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_check.php	(date 1434421916000)
++++ SJ/app/account_check.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_zh.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_zh.php	(date 1434421916000)
++++ SJ/app/admin/account_zh.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/emot.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/emot.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/emot.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_code.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_code.php	(date 1434421916000)
++++ SJ/app/history_code.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_check.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_check.php	(date 1434421916000)
++++ SJ/app/admin/account_check.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/js/lottery/jquery.lottery - 20131015.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/js/lottery/jquery.lottery - 20131015.js	(date 1434421916000)
++++ SJ/app/js/lottery/jquery.lottery - 20131015.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query9.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query9.php	(date 1434421916000)
++++ SJ/app/admin/query9.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_setpwd.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_setpwd.php	(date 1434421916000)
++++ SJ/app/account_setpwd.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query6.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query6.php	(date 1434421916000)
++++ SJ/app/admin/query6.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/ValiCode_new2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/ValiCode_new2.php	(date 1434421916000)
++++ SJ/app/ValiCode_new2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/login.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/login.php	(date 1434421916000)
++++ SJ/app/login.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/css/all.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/css/all.css	(date 1434421916000)
++++ SJ/app/css/all.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total.php	(date 1434421916000)
++++ SJ/app/admin/total.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_bills.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_bills.php	(date 1434421916000)
++++ SJ/app/admin/lottery_bills.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_tx.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_tx.php	(date 1434421916000)
++++ SJ/app/admin/total_tx.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/hx/OrderPay.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/hx/OrderPay.php	(date 1434421916000)
++++ SJ/app/hx/OrderPay.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/css/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/css/main.css	(date 1434421916000)
++++ SJ/app/admin/css/main.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/js/lottery/jquery.lottery - 20130704拷贝.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/js/lottery/jquery.lottery - 20130704拷贝.js	(date 1434421916000)
++++ SJ/app/js/lottery/jquery.lottery - 20130704拷贝.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/csonline_reply.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/csonline_reply.php	(date 1434421916000)
++++ SJ/app/csonline_reply.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/game/jsys2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/game/jsys2.php	(date 1434421916000)
++++ SJ/app/game/jsys2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_gd115.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_gd115.php	(date 1434421916000)
++++ SJ/app/play_gd115.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query5.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query5.php	(date 1434421916000)
++++ SJ/kj/query5.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query5.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query5.php	(date 1434421916000)
++++ SJ/app/admin/query5.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/check.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/check.php	(date 1434421916000)
++++ SJ/app/check.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query9.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query9.php	(date 1434421916000)
++++ SJ/kj/query9.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/conn.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/conn.php	(date 1434421916000)
++++ SJ/app/conn.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_sd115.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_sd115.php	(date 1434421916000)
++++ SJ/app/play_sd115.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/ip.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/ip.php	(date 1434421916000)
++++ SJ/app/ip.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_saveup.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_saveup.php	(date 1434421916000)
++++ SJ/app/users_saveup.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_carddel2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_carddel2.php	(date 1434421916000)
++++ SJ/app/account_carddel2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/selcolor.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/selcolor.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/selcolor.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/default_frame.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/default_frame.php	(date 1434421916000)
++++ SJ/app/default_frame.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/tablecellsplit.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/tablecellsplit.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/tablecellsplit.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/getXML/pl3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/getXML/pl3.php	(date 1434421916000)
++++ SJ/kj/getXML/pl3.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/conn_.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/conn_.php	(date 1434421916000)
++++ SJ/app/conn_.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/activitys.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/activitys.php	(date 1434421916000)
++++ SJ/app/admin/activitys.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/default_main2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/default_main2.php	(date 1434421916000)
++++ SJ/app/admin/default_main2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_draw.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_draw.php	(date 1434421916000)
++++ SJ/app/account_draw.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_update.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_update.php	(date 1434421916000)
++++ SJ/app/account_update.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query7.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query7.php	(date 1434421916000)
++++ SJ/app/admin/query7.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/game/a.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/game/a.php	(date 1434421916000)
++++ SJ/app/game/a.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/info.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/info.php	(date 1434421916000)
++++ SJ/app/admin/info.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/media.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/media.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/media.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/u.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/u.php	(date 1434421916000)
++++ SJ/app/u.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/yellow/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/yellow/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/yellow/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/js/lottery/jquery.lottery.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/js/lottery/jquery.lottery.js	(date 1434421916000)
++++ SJ/app/js/lottery/jquery.lottery.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/css/login.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/css/login.css	(date 1434421916000)
++++ SJ/app/css/login.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_cardconfirm.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_cardconfirm.php	(date 1434421916000)
++++ SJ/app/account_cardconfirm.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_savelist.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_savelist.php	(date 1434421916000)
++++ SJ/app/account_savelist.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_hljssc.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_hljssc.php	(date 1434421916000)
++++ SJ/app/play_hljssc.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_cardlock.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_cardlock.php	(date 1434421916000)
++++ SJ/app/account_cardlock.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/ValiCode_new.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/ValiCode_new.php	(date 1434421916000)
++++ SJ/app/ValiCode_new.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/img.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/img.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/img.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_carddel.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_carddel.php	(date 1434421916000)
++++ SJ/app/account_carddel.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/index.php	(date 1434421916000)
++++ SJ/app/index.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_czlist.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_czlist.php	(date 1434421916000)
++++ SJ/app/admin/account_czlist.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/autokja.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/autokja.php	(date 1434421916000)
++++ SJ/app/admin/autokja.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/banks_edit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/banks_edit.php	(date 1434421916000)
++++ SJ/app/admin/banks_edit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/url.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/url.php	(date 1434421916000)
++++ SJ/app/admin/url.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/activity_edit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/activity_edit.php	(date 1434421916000)
++++ SJ/app/admin/activity_edit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_cardadd.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_cardadd.php	(date 1434421916000)
++++ SJ/app/account_cardadd.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/mem_card.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/mem_card.php	(date 1434421916000)
++++ SJ/app/admin/mem_card.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/mem_total.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/mem_total.php	(date 1434421916000)
++++ SJ/app/admin/mem_total.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/mem_ztotal.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/mem_ztotal.php	(date 1434421916000)
++++ SJ/app/admin/mem_ztotal.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/art.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/art.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/art.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_update.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_update.php	(date 1434421916000)
++++ SJ/app/users_update.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/hx/OrderReturn.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/hx/OrderReturn.php	(date 1434421916000)
++++ SJ/app/hx/OrderReturn.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query2.php	(date 1434421916000)
++++ SJ/kj/query2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_rebate.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_rebate.php	(date 1434421916000)
++++ SJ/app/admin/lottery_rebate.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/banks_cz.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/banks_cz.php	(date 1434421916000)
++++ SJ/app/admin/banks_cz.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/green.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/green.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/green.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query.php	(date 1434421916000)
++++ SJ/app/admin/query.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/light/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/light/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/light/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_saveupok.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_saveupok.php	(date 1434421916000)
++++ SJ/app/users_saveupok.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/activity.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/activity.php	(date 1434421916000)
++++ SJ/app/admin/activity.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query1.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query1.php	(date 1434421916000)
++++ SJ/kj/query1.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/light/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/light/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/light/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/mem_amend.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/mem_amend.php	(date 1434421916000)
++++ SJ/app/admin/mem_amend.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/online.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/online.php	(date 1434421916000)
++++ SJ/app/admin/online.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/login.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/login.php	(date 1434421916000)
++++ SJ/app/admin/login.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/getXML/11ydj.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/getXML/11ydj.php	(date 1434421916000)
++++ SJ/kj/getXML/11ydj.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/js/main.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/js/main.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/js/main.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/default_logout.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/default_logout.php	(date 1434421916000)
++++ SJ/app/default_logout.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/css/logstyle.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/css/logstyle.css	(date 1434421916000)
++++ SJ/app/admin/css/logstyle.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/config.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/config.php	(date 1434421916000)
++++ SJ/app/admin/config.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/_example/clientapi.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/_example/clientapi.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/_example/clientapi.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_prize.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_prize.php	(date 1434421916000)
++++ SJ/app/admin/total_prize.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/conn.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/conn.php	(date 1434421916000)
++++ SJ/app/admin/conn.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/default_main3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/default_main3.php	(date 1434421916000)
++++ SJ/app/admin/default_main3.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/csonline_list.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/csonline_list.php	(date 1434421916000)
++++ SJ/app/csonline_list.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_editupsave.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_editupsave.php	(date 1434421916000)
++++ SJ/app/users_editupsave.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/banks.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/banks.php	(date 1434421916000)
++++ SJ/app/admin/banks.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/getXML/gd11x5.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/getXML/gd11x5.php	(date 1434421916000)
++++ SJ/kj/getXML/gd11x5.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/ValiCode_new.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/ValiCode_new.php	(date 1434421916000)
++++ SJ/app/admin/ValiCode_new.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/css/v1.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/css/v1.css	(date 1434421916000)
++++ SJ/app/css/v1.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/queryauto3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/queryauto3.php	(date 1434421916000)
++++ SJ/app/admin/queryauto3.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/blue.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/blue.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/blue.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_xjssc.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_xjssc.php	(date 1434421916000)
++++ SJ/app/play_xjssc.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/getXML/cqc.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/getXML/cqc.php	(date 1434421916000)
++++ SJ/kj/getXML/cqc.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/js/calendar/lang/calendar-utf8.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/js/calendar/lang/calendar-utf8.js	(date 1434421916000)
++++ SJ/app/admin/js/calendar/lang/calendar-utf8.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_rebate.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_rebate.php	(date 1434421916000)
++++ SJ/app/admin/account_rebate.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_txlist.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_txlist.php	(date 1434421916000)
++++ SJ/app/admin/account_txlist.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/js/lottery/拷贝于 jquery.lottery.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/js/lottery/拷贝于 jquery.lottery.js	(date 1434421916000)
++++ SJ/app/js/lottery/拷贝于 jquery.lottery.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/hyperlink.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/hyperlink.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/hyperlink.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/mx/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/mx/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/mx/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/blue/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/blue/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/blue/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/csonline_addnew.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/csonline_addnew.php	(date 1434421916000)
++++ SJ/app/csonline_addnew.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/check2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/check2.php	(date 1434421916000)
++++ SJ/app/check2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_messaged.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_messaged.php	(date 1434421916000)
++++ SJ/app/users_messaged.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/ip.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/ip.php	(date 1434421916000)
++++ SJ/app/admin/ip.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/manager_edit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/manager_edit.php	(date 1434421916000)
++++ SJ/app/admin/manager_edit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/_example/para_extcss.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/_example/para_extcss.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/_example/para_extcss.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/autokj/autokja.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/autokj/autokja.php	(date 1434421916000)
++++ SJ/kj/autokj/autokja.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/mem_cardedit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/mem_cardedit.php	(date 1434421916000)
++++ SJ/app/admin/mem_cardedit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_class.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_class.php	(date 1434421916000)
++++ SJ/app/admin/lottery_class.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/dialog.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/dialog.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/dialog.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/url_edit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/url_edit.php	(date 1434421916000)
++++ SJ/app/admin/url_edit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_code2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_code2.php	(date 1434421916000)
++++ SJ/app/history_code2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/_example/example.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/_example/example.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/_example/example.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_cq115.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_cq115.php	(date 1434421916000)
++++ SJ/app/play_cq115.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/red.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/red.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/red.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/intro2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/intro2.php	(date 1434421916000)
++++ SJ/app/admin/intro2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query4.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query4.php	(date 1434421916000)
++++ SJ/kj/query4.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/manager.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/manager.php	(date 1434421916000)
++++ SJ/app/admin/manager.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/clear.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/clear.php	(date 1434421916000)
++++ SJ/app/admin/clear.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/getXML/fc3d.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/getXML/fc3d.php	(date 1434421916000)
++++ SJ/kj/getXML/fc3d.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/map.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/map.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/map.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/office/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/office/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/office/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/autokja_kj.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/autokja_kj.php	(date 1434421916000)
++++ SJ/app/admin/autokja_kj.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/office3d/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/office3d/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/office3d/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query4.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query4.php	(date 1434421916000)
++++ SJ/app/admin/query4.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history4.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history4.php	(date 1434421916000)
++++ SJ/app/history4.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/yellow/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/yellow/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/yellow/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_prize.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_prize.php	(date 1434421916000)
++++ SJ/app/admin/account_prize.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/default_left2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/default_left2.php	(date 1434421916000)
++++ SJ/app/admin/default_left2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query10.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query10.php	(date 1434421916000)
++++ SJ/app/admin/query10.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history5.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history5.php	(date 1434421916000)
++++ SJ/app/history5.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/login2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/login2.php	(date 1434421916000)
++++ SJ/app/login2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/kf_reply.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/kf_reply.php	(date 1434421916000)
++++ SJ/app/admin/kf_reply.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_p3p5.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_p3p5.php	(date 1434421916000)
++++ SJ/app/play_p3p5.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/red/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/red/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/red/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/queryauto4.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/queryauto4.php	(date 1434421916000)
++++ SJ/app/admin/queryauto4.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/js/lottery/jquery.lottery.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/js/lottery/jquery.lottery.js	(date 1434421916000)
++++ SJ/app/admin/js/lottery/jquery.lottery.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/office/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/office/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/office/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/index.php	(date 1434421916000)
++++ SJ/app/admin/index.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_edit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_edit.php	(date 1434421916000)
++++ SJ/app/users_edit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_tz.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_tz.php	(date 1434421916000)
++++ SJ/app/admin/total_tz.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/web.config
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/web.config	(date 1434421916000)
++++ SJ/app/web.config	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_classb.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_classb.php	(date 1434421916000)
++++ SJ/app/admin/lottery_classb.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_port.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_port.php	(date 1434421916000)
++++ SJ/app/admin/lottery_port.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history2.php	(date 1434421916000)
++++ SJ/app/history2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/file.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/file.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/file.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/mysql.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/mysql.txt	(date 1434421916000)
++++ SJ/app/mysql.txt	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/marquee.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/marquee.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/marquee.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/yellow.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/yellow.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/yellow.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/report_detail.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/report_detail.php	(date 1434421916000)
++++ SJ/app/report_detail.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query11.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query11.php	(date 1434421916000)
++++ SJ/kj/query11.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/mx/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/mx/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/mx/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/_example/myeditorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/_example/myeditorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/_example/myeditorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query6.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query6.php	(date 1434421916000)
++++ SJ/kj/query6.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/query.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/query.php	(date 1434421916000)
++++ SJ/app/query.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_saveinfo.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_saveinfo.php	(date 1434421916000)
++++ SJ/app/account_saveinfo.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query3.php	(date 1434421916000)
++++ SJ/app/admin/query3.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_taskcancel.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_taskcancel.php	(date 1434421916000)
++++ SJ/app/history_taskcancel.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_cz.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_cz.php	(date 1434421916000)
++++ SJ/app/admin/total_cz.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_tx.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_tx.php	(date 1434421916000)
++++ SJ/app/admin/account_tx.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/default_left.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/default_left.php	(date 1434421916000)
++++ SJ/app/admin/default_left.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/green/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/green/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/green/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/error.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/error.php	(date 1434421916000)
++++ SJ/app/admin/error.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/autokja_qt.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/autokja_qt.php	(date 1434421916000)
++++ SJ/app/admin/autokja_qt.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_record.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_record.php	(date 1434421916000)
++++ SJ/app/admin/account_record.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/game/connect.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/game/connect.php	(date 1434421916000)
++++ SJ/app/game/connect.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_zhu.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_zhu.php	(date 1434421916000)
++++ SJ/app/admin/lottery_zhu.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_playlist.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_playlist.php	(date 1434421916000)
++++ SJ/app/history_playlist.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/ewebeditor.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/ewebeditor.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/ewebeditor.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/admin_amend.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/admin_amend.php	(date 1434421916000)
++++ SJ/app/admin/admin_amend.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/table.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/table.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/table.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/queryauto1.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/queryauto1.php	(date 1434421916000)
++++ SJ/app/admin/queryauto1.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_save.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_save.php	(date 1434421916000)
++++ SJ/app/account_save.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_confirm.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_confirm.php	(date 1434421916000)
++++ SJ/app/account_confirm.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/paragraph.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/paragraph.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/paragraph.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/indexa.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/indexa.php	(date 1434421916000)
++++ SJ/app/admin/indexa.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_banks.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_banks.php	(date 1434421916000)
++++ SJ/app/account_banks.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/report_today.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/report_today.php	(date 1434421916000)
++++ SJ/app/report_today.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/coolblue.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/coolblue.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/coolblue.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query3.php	(date 1434421916000)
++++ SJ/kj/query3.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/banks_edit2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/banks_edit2.php	(date 1434421916000)
++++ SJ/app/admin/banks_edit2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_fucai3d.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_fucai3d.php	(date 1434421916000)
++++ SJ/app/play_fucai3d.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/help_general.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/help_general.php	(date 1434421916000)
++++ SJ/app/help_general.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query1a.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query1a.php	(date 1434421916000)
++++ SJ/kj/query1a.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/getXML/cq11x5.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/getXML/cq11x5.php	(date 1434421916000)
++++ SJ/kj/getXML/cq11x5.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/report_reward.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/report_reward.php	(date 1434421916000)
++++ SJ/app/report_reward.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/hx/redirect.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/hx/redirect.php	(date 1434421916000)
++++ SJ/app/hx/redirect.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/default_getpass3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/default_getpass3.php	(date 1434421916000)
++++ SJ/app/default_getpass3.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_cardadd2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_cardadd2.php	(date 1434421916000)
++++ SJ/app/account_cardadd2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/mem_list.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/mem_list.php	(date 1434421916000)
++++ SJ/app/admin/mem_list.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/tablecell.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/tablecell.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/tablecell.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/autokj/conn.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/autokj/conn.php	(date 1434421916000)
++++ SJ/kj/autokj/conn.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_hd.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_hd.php	(date 1434421916000)
++++ SJ/app/admin/total_hd.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/light/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/light/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/light/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/plan_list.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/plan_list.php	(date 1434421916000)
++++ SJ/app/admin/plan_list.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_jx115.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_jx115.php	(date 1434421916000)
++++ SJ/app/play_jx115.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/default_menu.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/default_menu.php	(date 1434421916000)
++++ SJ/app/default_menu.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/popup.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/popup.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/popup.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/promotion_center.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/promotion_center.php	(date 1434421916000)
++++ SJ/app/promotion_center.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/affiche.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/affiche.php	(date 1434421916000)
++++ SJ/app/admin/affiche.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/register.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/register.php	(date 1434421916000)
++++ SJ/app/register.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/phpinfo.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/phpinfo.php	(date 1434421916000)
++++ SJ/app/phpinfo.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/css/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/css/main.css	(date 1434421916000)
++++ SJ/app/css/main.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/help_game2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/help_game2.php	(date 1434421916000)
++++ SJ/app/help_game2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_draws.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_draws.php	(date 1434421916000)
++++ SJ/app/account_draws.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/banks_tx.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/banks_tx.php	(date 1434421916000)
++++ SJ/app/admin/banks_tx.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/about.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/about.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/about.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/css/index.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/css/index.css	(date 1434421916000)
++++ SJ/app/admin/css/index.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_tg.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_tg.php	(date 1434421916000)
++++ SJ/app/users_tg.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/_example/standard.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/_example/standard.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/_example/standard.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query1a.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query1a.php	(date 1434421916000)
++++ SJ/app/admin/query1a.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/js/editor.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/js/editor.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/js/editor.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_nums.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_nums.php	(date 1434421916000)
++++ SJ/app/admin/lottery_nums.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_fh.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_fh.php	(date 1434421916000)
++++ SJ/app/admin/account_fh.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_playcancel.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_playcancel.php	(date 1434421916000)
++++ SJ/app/history_playcancel.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/green/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/green/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/green/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/office/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/office/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/office/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/kfs.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/kfs.php	(date 1434421916000)
++++ SJ/app/admin/kfs.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/play_cqssc.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/play_cqssc.php	(date 1434421916000)
++++ SJ/app/play_cqssc.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_taskinfo.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_taskinfo.php	(date 1434421916000)
++++ SJ/app/history_taskinfo.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/untitled1.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/untitled1.php	(date 1434421916000)
++++ SJ/app/untitled1.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/office3d/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/office3d/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/office3d/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/help_fun.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/help_fun.php	(date 1434421916000)
++++ SJ/app/help_fun.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/queryautos.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/queryautos.php	(date 1434421916000)
++++ SJ/kj/queryautos.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/js/table.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/js/table.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/js/table.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query2.php	(date 1434421916000)
++++ SJ/app/admin/query2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_listb.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_listb.php	(date 1434421916000)
++++ SJ/app/users_listb.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/queryautos.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/queryautos.php	(date 1434421916000)
++++ SJ/app/admin/queryautos.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/js/menu.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/js/menu.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/js/menu.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_game.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_game.php	(date 1434421916000)
++++ SJ/app/admin/lottery_game.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/_example/default.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/_example/default.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/_example/default.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/anchor.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/anchor.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/anchor.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/untitled.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/untitled.php	(date 1434421916000)
++++ SJ/app/untitled.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query8.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query8.php	(date 1434421916000)
++++ SJ/app/admin/query8.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/gray.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/gray.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/gray.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_message.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_message.php	(date 1434421916000)
++++ SJ/app/users_message.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/dialog.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/dialog.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/dialog.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/findreplace.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/findreplace.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/findreplace.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/account_tz.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/account_tz.php	(date 1434421916000)
++++ SJ/app/admin/account_tz.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/affiche_edit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/affiche_edit.php	(date 1434421916000)
++++ SJ/app/admin/affiche_edit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_autosave2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_autosave2.php	(date 1434421916000)
++++ SJ/app/account_autosave2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/111.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/111.php	(date 1434421916000)
++++ SJ/app/111.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_list.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_list.php	(date 1434421916000)
++++ SJ/app/users_list.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/拷贝于 autokja.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/拷贝于 autokja.php	(date 1434421916000)
++++ SJ/app/admin/拷贝于 autokja.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/backimage.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/backimage.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/backimage.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/green/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/green/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/green/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/blue/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/blue/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/blue/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_data.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_data.php	(date 1434421916000)
++++ SJ/app/admin/lottery_data.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/css/header.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/css/header.css	(date 1434421916000)
++++ SJ/app/css/header.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/red/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/red/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/red/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history3.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history3.php	(date 1434421916000)
++++ SJ/app/history3.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/query1.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/query1.php	(date 1434421916000)
++++ SJ/app/admin/query1.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/users_add.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/users_add.php	(date 1434421916000)
++++ SJ/app/users_add.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/report_game.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/report_game.php	(date 1434421916000)
++++ SJ/app/report_game.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_js.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_js.php	(date 1434421916000)
++++ SJ/app/admin/total_js.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/js/calendar/lang/calendar-utf8.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/js/calendar/lang/calendar-utf8.js	(date 1434421916000)
++++ SJ/app/js/calendar/lang/calendar-utf8.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/backup.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/backup.php	(date 1434421916000)
++++ SJ/app/backup.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/sysmessage.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/sysmessage.php	(date 1434421916000)
++++ SJ/app/sysmessage.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/fieldset.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/fieldset.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/fieldset.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/office3d/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/office3d/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/office3d/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_fenhong.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_fenhong.php	(date 1434421916000)
++++ SJ/app/account_fenhong.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/yellow/editor.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/yellow/editor.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/yellow/editor.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/popup.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/popup.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/popup.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/default_main.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/default_main.php	(date 1434421916000)
++++ SJ/app/admin/default_main.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_autosave.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_autosave.php	(date 1434421916000)
++++ SJ/app/account_autosave.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/style/3d.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/style/3d.js	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/style/3d.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history.php	(date 1434421916000)
++++ SJ/app/history.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_xf.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_xf.php	(date 1434421916000)
++++ SJ/app/admin/total_xf.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/kf.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/kf.php	(date 1434421916000)
++++ SJ/app/admin/kf.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/queryauto2.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/queryauto2.php	(date 1434421916000)
++++ SJ/app/admin/queryauto2.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/js/common.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/js/common.js	(date 1434421916000)
++++ SJ/app/js/common.js	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/iframe.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/iframe.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/iframe.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/banks_czedit.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/banks_czedit.php	(date 1434421916000)
++++ SJ/app/admin/banks_czedit.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_rate.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_rate.php	(date 1434421916000)
++++ SJ/app/admin/lottery_rate.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/lottery_bei.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/lottery_bei.php	(date 1434421916000)
++++ SJ/app/admin/lottery_bei.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/dialog/symbol.htm
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GB2312
+===================================================================
+--- SJ/app/admin/eWebEditor/dialog/symbol.htm	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/dialog/symbol.htm	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/default_getdata.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/default_getdata.php	(date 1434421916000)
++++ SJ/app/admin/default_getdata.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/total_fh.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/total_fh.php	(date 1434421916000)
++++ SJ/app/admin/total_fh.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/coolblue/editorarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/coolblue/editorarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/coolblue/editorarea.css	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/eWebEdior简体中文精简版使用说明(V4.6).txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/eWebEdior简体中文精简版使用说明(V4.6).txt	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/eWebEdior简体中文精简版使用说明(V4.6).txt	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/kj/query10.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/kj/query10.php	(date 1434421916000)
++++ SJ/kj/query10.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/report_list.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/report_list.php	(date 1434421916000)
++++ SJ/app/report_list.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/history_tasklist.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/history_tasklist.php	(date 1434421916000)
++++ SJ/app/history_tasklist.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/default_getpass.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/default_getpass.php	(date 1434421916000)
++++ SJ/app/default_getpass.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/paihang.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/paihang.php	(date 1434421916000)
++++ SJ/app/paihang.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/autokj.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/autokj.php	(date 1434421916000)
++++ SJ/app/admin/autokj.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/account_drawlist.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/account_drawlist.php	(date 1434421916000)
++++ SJ/app/account_drawlist.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/help_security.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/help_security.php	(date 1434421916000)
++++ SJ/app/help_security.php	(revision )
+@@ -1,0 +1,0 @@
+Index: SJ/app/admin/eWebEditor/css/coolblue/menuarea.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- SJ/app/admin/eWebEditor/css/coolblue/menuarea.css	(date 1434421916000)
++++ SJ/app/admin/eWebEditor/css/coolblue/menuarea.css	(revision )
+@@ -1,0 +1,0 @@
