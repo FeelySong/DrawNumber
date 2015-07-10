@@ -66,8 +66,35 @@ def drawnumber(ssc_type):
         #print result
         return draw_date,draw_code1,draw_time
 
-def tjssc():
+def tjsscbak():
     url="http://kj.cjcp.com.cn/tjssc/"
+    r = br.open(url,timeout=10)
+    html = r.read()
+    print br.title()
+    soup = BeautifulSoup(html)
+    table_hot = soup.find('td',attrs={"class":"qihao"})
+    time_hot = soup.find ('td',attrs={"class":"time"})
+    draw_time=time_hot.get_text()
+    date_tmp=table_hot.get_text()
+    draw_date=date_tmp[0:8]+'-0'+date_tmp[9:11]
+    number1 = {}
+    codes=''
+    t1=0
+    # print soup.find('td', text=table_hot.get_text()).parent.find_all('input')['value']
+    while t1<5:
+        number1[t1]=soup.find("td", text=table_hot.get_text()).parent.find_all('input')[t1]['value']
+        codes=codes+number1[t1].strip()+','
+        t1+=1
+    draw_code=codes[:-1]
+    print "tjssc number:"
+    print draw_code,draw_date,draw_time
+    logging.info('天津时时彩'+'   '+url)
+    logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
+    return draw_code,draw_date,draw_time[:-3]
+    #return draw_code,draw_date,str(datetime.now())
+
+def tjssc():
+    url="http://www.tjflcpw.com"
     r = br.open(url,timeout=10)
     html = r.read()
     print br.title()
