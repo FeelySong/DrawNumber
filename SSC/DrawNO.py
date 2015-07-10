@@ -6,6 +6,7 @@ from lxml import etree
 from datetime import datetime
 from bs4 import BeautifulSoup
 import sys
+import logging
 
 
 reload(sys)

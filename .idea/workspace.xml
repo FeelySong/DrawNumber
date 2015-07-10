@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b9f398-6223-4b0b-9b83-2dac2095eaa0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/DrawNumber.iml" afterPath="$PROJECT_DIR$/.idea/DrawNumber.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SSC/DrawNO.py" afterPath="$PROJECT_DIR$/SSC/DrawNO.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="DrawNumber.iws" />
@@ -26,12 +26,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Number.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Number.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SSC/Number.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="3.6342044" vertical-offset="0" max-vertical-offset="3120">
+            <state vertical-scroll-proportion="0.0" vertical-offset="2430" max-vertical-offset="3120">
               <caret line="102" column="14" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="32" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DrawNO.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SSC/DrawNO.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.9166665" vertical-offset="3213" max-vertical-offset="3645">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+              <folding>
+                <element signature="e#16#29#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,8 +110,8 @@
         <option value="$PROJECT_DIR$/SSC/SpiderAlipay.py" />
         <option value="$PROJECT_DIR$/SSC/db.py" />
         <option value="$PROJECT_DIR$/SSC/log.py" />
-        <option value="$PROJECT_DIR$/SSC/DrawNO.py" />
         <option value="$PROJECT_DIR$/SSC/Number.py" />
+        <option value="$PROJECT_DIR$/SSC/DrawNO.py" />
       </list>
     </option>
   </component>
@@ -540,7 +552,11 @@
       <created>1436505837592</created>
       <updated>1436505837592</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="v1.0">
+      <created>1436506052354</created>
+      <updated>1436506052354</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -565,19 +581,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="799" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3235725" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32452276" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32650074" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32748538" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11794501" sideWeight="0.5007429" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28752643" sideWeight="0.49925706" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28752643" sideWeight="0.49925706" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738096" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11794501" sideWeight="0.5007429" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35139093" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32748538" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32650074" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -639,6 +655,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="3630">
           <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -669,6 +686,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="3630">
           <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -683,6 +701,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3120" max-vertical-offset="3225">
           <caret line="208" column="70" selection-start-line="208" selection-start-column="70" selection-end-line="208" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -705,6 +724,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="3120" max-vertical-offset="3225">
           <caret line="208" column="70" selection-start-line="208" selection-start-column="70" selection-end-line="208" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -712,6 +732,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2548" max-vertical-offset="3225">
           <caret line="208" column="70" selection-start-line="208" selection-start-column="70" selection-end-line="208" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -771,13 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SSC/DrawNO.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1545" max-vertical-offset="3630">
-          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SSC/db.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.6216216" vertical-offset="0" max-vertical-offset="1230">
@@ -788,8 +802,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SSC/Number.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6342044" vertical-offset="0" max-vertical-offset="3120">
+        <state vertical-scroll-proportion="0.0" vertical-offset="2430" max-vertical-offset="3120">
           <caret line="102" column="14" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SSC/DrawNO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.9166665" vertical-offset="3213" max-vertical-offset="3645">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding />
         </state>
       </provider>
