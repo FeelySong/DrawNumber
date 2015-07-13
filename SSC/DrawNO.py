@@ -129,7 +129,6 @@ def tjsscbak():
     log.logging.info('天津时时彩'+'   '+url)
     log.logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
     return draw_code,draw_date,draw_time[:-3]
-    #return draw_code,draw_date,str(datetime.now())
 
 def gd11x5(ssc_type):
     try:
