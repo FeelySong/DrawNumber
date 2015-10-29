@@ -38,6 +38,25 @@ def ssc360_drawnumber(ssc360_type,db_ssc_type):
         # ms.SYSPaiJiang(SPname='ibc.dbo.SYSPaiJiang',kjExpect=draw_date,kjTime=draw_time_str,kjCode=draw_code,ltType=db_ssc_type)
         time.sleep(30)
 
+# 500wan时时彩
+def ssc500_drawnumber(ssc500_type,db_ssc_type):
+    ms_cqssc= db.MSSQL()
+    global returndate
+    while True:
+        #调用爬虫，获取开奖信息
+        assert isinstance(ssc500_type, str)
+        draw_date,draw_code, draw_time_str= DrawNO.CP500wan(ssc500_type)
+        if draw_code == '0' or draw_date <= returndate:
+            pass
+        else:
+            returndate=ms_cqssc.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
+            time.sleep(180)
+        # draw_time = datetime.strptime(draw_time_str, "%Y-%m-%d %H:%M")
+        # ms.IsInfoExists(SPname='ibc.dbo.IsInfoExists',lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time,addtime=datetime.now())
+        # time.sleep(1)
+        # ms.SYSPaiJiang(SPname='ibc.dbo.SYSPaiJiang',kjExpect=draw_date,kjTime=draw_time_str,kjCode=draw_code,ltType=db_ssc_type)
+        time.sleep(30)
+
 #重庆时时彩
 def ssc_drawnumber(ssc_type,db_ssc_type):
     ms_cqssc= db.MSSQL()
@@ -135,7 +154,7 @@ def main():
 
     :rtype : Null
     """
-    # #360重庆时时彩
+    #360重庆时时彩
     # ssc360_type='ssccq'
     # db_ssc_type='SSC'
     # jobs=[]
@@ -144,7 +163,17 @@ def main():
     #     jobs.append(p_360cq)
     #     p_360cq.start()
     #     p_360cq.join(timeout=10)
-    #
+
+    # #500wan重庆时时彩
+    # ssc500_type='ssc'
+    # db_ssc_type='SSC'
+    # jobs=[]
+    # for i in range(2):
+    #     p_500cq=multiprocessing.Process(name='500CQSSC',target=ssc500_drawnumber,args=(ssc500_type,db_ssc_type,))
+    #     jobs.append(p_500cq)
+    #     p_500cq.start()
+    #     p_500cq.join(timeout=10)
+
     # #重庆时时彩
     # ssc_type='cqssc'
     # db_ssc_type='SSC'
@@ -163,7 +192,7 @@ def main():
     # p_cq.start()
     # p_cq.join(timeout=10)
 
-    #天津时时彩
+    # #天津时时彩
     db_ssc_type='TSC'
     jobs=[]
     for i in range(2):

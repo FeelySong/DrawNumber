@@ -1,4 +1,4 @@
-# coding:utf-8
+# coding=utf-8
 
 import socket
 import time
@@ -91,7 +91,8 @@ def tjssc():
         ## xpath analyze
         d = etree.HTML(ssc_html)
         draw_date = d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[1]/span[2]/a/text()')[0].decode('utf-8')
-        draw_date = draw_date[50:58]+'-'+draw_date[58:61];
+        print draw_date
+        draw_date = draw_date[42:50]+'-'+draw_date[50:53];
         number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[1]/text()'))+','
         number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[2]/text()'))+','
         number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[3]/text()'))+','
@@ -223,14 +224,15 @@ def CQ360(ssc360_type):
         ## xpath analyze
         d = etree.HTML(ssc_html)
         #Draw DateNO
-        draw_date_tmp = ''.join(d.xpath(u'/html/body/div[1]/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/h3/em/text()'))
+        draw_date_tmp = ''.join(d.xpath(u'/html/body/div[1]/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]/h3/em/text()'))
+        #draw_date_tmp = ''.join(d.xpath(u'/html/body/div[1]/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]/h3/em/text()'))
         draw_date=str(now_time.tm_year)+draw_date_tmp[0:4]+'-'+draw_date_tmp[4:7]
         #drow Number
-        number=number+''.join(d.xpath(u'/html/body/div[1]/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[1]/text()'))+','
-        number=number+''.join(d.xpath(u'/html/body/div[1]/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[2]/text()'))+','
-        number=number+''.join(d.xpath(u'/html/body/div[1]/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[3]/text()'))+','
-        number=number+''.join(d.xpath(u'/html/body/div[1]/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[4]/text()'))+','
-        number=number+''.join(d.xpath(u'/html/body/div[1]/div[2]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[5]/text()'))
+        number=number+''.join(d.xpath(u'/html/body/div[1]/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[1]/text()'))+','
+        number=number+''.join(d.xpath(u'/html/body/div[1]/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[2]/text()'))+','
+        number=number+''.join(d.xpath(u'/html/body/div[1]/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[3]/text()'))+','
+        number=number+''.join(d.xpath(u'/html/body/div[1]/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[4]/text()'))+','
+        number=number+''.join(d.xpath(u'/html/body/div[1]/div[3]/div[3]/div[2]/div[2]/div[1]/div[1]/div/ul/li[5]/text()'))
         draw_code=number
         #Draw Time
         draw_time=datetime.now().strftime("%Y-%m-%d %H:%M")
@@ -242,34 +244,69 @@ def CQ360(ssc360_type):
         return draw_date,number,draw_time
 
 
-# def CQBaidu():
-#     #Open website
-#     """
-#     :param self:
-#     :param ssc_type:
-#     :rtype : str,datetime,datetime
-#     """
-#     url='http://www.lecai.com/lottery/cqssc/'
-#     try:
-#         r = br.open(url)
-#     except Exception,err:
-#         error1= str(err)
-#         print 'pls',error1
-#         log.logging.error(br.title())
-#         log.logging.exception(error1)
-#         return '0','0','0'
-#     else:
-#         ssc_html = r.read().decode('utf-8')
-#         print ssc_html
-#
-#         #show the html title
-#         print br.title()
-#         # xpath analyze
-#         d = etree.HTML(ssc_html)
-#         draw_date_tmp = d.xpath(u'//td/text()')[134]
-#         print draw_date_tmp
+def CP500wan(ssc500_type):
+    #Open website
+    """
+    :param self:
+    :param ssc_type:
+    :rtype : str,datetime,datetime
+    """
+
+    url="http://www.500wan.com/static/public/"+ssc500_type+"/xml/newlyopen.xml"
+    print url
+    now_time=time.localtime()
+    number = ''
+    try:
+        r = br.open(url,timeout=10)
+    except Exception,err:
+        error= str(err)
+        print 'CQ360',error
+        log.logging.error(br.title())
+        log.logging.exception(error)
+        return '0','0','0'
+    else:
+        html = r.read()
+        print html
+        draw_date=html[58:66]+'-'+html[66:69]
+        draw_code=html[81:90]
+        draw_time=datetime.now().strftime("%Y-%m-%d %H:%M")
+        print draw_date,draw_code,draw_time
+        if (number=='?,?,?,?,?'):
+            number='0'
+        log.logging.info('500wan时时彩'+'   '+url)
+        log.logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
+        return draw_date,draw_code,draw_time
+
+
+def CQBaidu():
+    #Open website
+    """
+    :param self:
+    :param ssc_type:
+    :rtype : str,datetime,datetime
+    """
+    url='http://www.lecai.com/lottery/cqssc/'
+    try:
+        r = br.open(url)
+    except Exception,err:
+        error1= str(err)
+        print 'pls',error1
+        log.logging.error(br.title())
+        log.logging.exception(error1)
+        return '0','0','0'
+    else:
+        ssc_html = r.read().decode('utf-8')
+        print ssc_html
+
+        #show the html title
+        print br.title()
+        # xpath analyze
+        d = etree.HTML(ssc_html)
+        draw_date_tmp = d.xpath(u'/html/body/div[7]/div[2]/div[2]/div[2]/table[1]/tbody/tr[2]/td[1]/text()')
+        print draw_date_tmp
 #
 
-# if __name__ == "__main__":
-#     tjssc()
-#     print 'su'
+if __name__ == "__main__":
+    CQBaidu()
+    print 'su'
+
