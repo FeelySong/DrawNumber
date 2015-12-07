@@ -1,33 +1,30 @@
-#coding=utf-8
+# coding=gb2312
 
-import socket
-import sys
-reload(sys)
-sys.setdefaultencoding('utf-8')
-STDERR = sys.stderr
-import mechanize
-import cookielib
-
-socket.setdefaulttimeout(300)
-
-#Browser
-br = mechanize.Browser()
-cj = cookielib.CookieJar()
-br.set_cookiejar(cj)
-#Browser options
-br.set_handle_equiv(True)
-##br.set_handle_gzip(True)
-br.set_handle_redirect(True)
-br.set_handle_referer(True)
-br.set_handle_robots(False)
-
-#Follows refresh 0 but not hangs on refresh > 0
-br.set_handle_refresh(mechanize.HTTPRefreshProcessor(), max_time=1)
-#User-Agent
-br.addheaders = [("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.9; rv:30.0) Gecko/20100101 Firefox/30.0 FirePHP/0.7.4"),
-                 ("Content-Type","text/json; charset=utf-8")]
-
-
-r = br.open('http://www.lecai.com/lottery/draw/ajax_get_latest_draw_html.php?lottery_type=200')
-
-print r.read()
+from ghost import Ghost
+import time
+import lxml.html
+ss=0
+ghost = Ghost()
+url="http://baidu.lecai.com/lottery/draw/view/557/"
+with ghost.start(download_images=False) as session:
+    session.wait_timeout=60
+    while ss<10:
+        page, resources = session.open(url,timeout=60)
+        html = lxml.html.fromstring(session.content)
+        e=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[1]/h1/b/text()')
+        print ''.join(e)
+        n1=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[1]/text()')
+        n2=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[2]/text()')
+        n3=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[3]/text()')
+        n4=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[4]/text()')
+        n5=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[5]/text()')
+        n6=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[6]/text()')
+        n7=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[7]/text()')
+        n8=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[8]/text()')
+        n9=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[9]/text()')
+        n10=html.xpath(u'/html/body/div[6]/div[2]/div[2]/div[2]/div[1]/div[1]/ul/li[2]/div[1]/label/span[10]/text()')
+        draw_code=n1+n2+n3+n4+n5+n6+n7+n8+n9+n10
+        print type(draw_code)
+        time.sleep(60)
+        ss=ss+1
+    session.exit()

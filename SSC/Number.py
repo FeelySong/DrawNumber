@@ -135,6 +135,21 @@ def pls_drawnumber(db_type):
             returnDate=ms_pls.PL3SP(lottery_type=db_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
             time.sleep(180)
         time.sleep(30)
+
+#北京PK10
+def bjkc_drawnumber(bjkc_db_type):
+    ms_bjkc= db.MSSQL()
+    bjkcreturndate=''
+    while True:
+        # #调用爬虫，获取开奖信息
+        draw_date,draw_code,draw_time_str= DrawNO.BJKC()
+        if  draw_code == '0' or draw_date <= bjkcreturndate:
+            pass
+        else:
+            bjkcreturndate=ms_bjkc.BJKCSP(lottery_type=bjkc_db_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
+        time.sleep(180)
+    time.sleep(30)
+
 #GDSFC
 def gdsf_drawnumber(gdsf_db_type):
     ms_gdsf= db.MSSQL()
@@ -193,13 +208,13 @@ def main():
     # p_cq.join(timeout=10)
 
     # #天津时时彩
-    db_ssc_type='TSC'
-    jobs=[]
-    for i in range(2):
-        p_tj=multiprocessing.Process(name='TJSSC',target=tjssc_drawnumber,args=(db_ssc_type,))
-        jobs.append(p_tj)
-        p_tj.start()
-        p_tj.join(timeout=10)
+    # db_ssc_type='TSC'
+    # jobs=[]
+    # for i in range(2):
+    #     p_tj=multiprocessing.Process(name='TJSSC',target=tjssc_drawnumber,args=(db_ssc_type,))
+    #     jobs.append(p_tj)
+    #     p_tj.start()
+    #     p_tj.join(timeout=10)
 
     #江西时时彩
     # ssc_type='jxssc'
@@ -220,6 +235,15 @@ def main():
     # p_11x5=multiprocessing.Process(name='GD11X5',target=gd11x5,args=(ssc_type,db_11x5_type,))
     # p_11x5.start()
     # p_11x5.join(10)
+
+    # 北京PK10
+    db_ssc_type='bjkc'
+    jobs=[]
+    for i in range(2):
+        p_bjkc=multiprocessing.Process(name='bjkc',target=bjkc_drawnumber,args=(db_ssc_type,))
+        jobs.append(p_bjkc)
+        p_bjkc.start()
+        p_bjkc.join(timeout=10)
 
 if __name__ == "__main__":
     main()

@@ -50,9 +50,19 @@ class MSSQL:
     def PL3SP(self,lottery_type,lottery_num,kjCodes,kjtime):
         cur = self.__GetConnect()
         kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
-        cur.callproc('ibc.dbo.IsInfoExists',(lottery_type,lottery_num,kjCodes,kjtime_datetime,datetime.now(),))
+        cur.callproc('dbo.IsInfoExists',(lottery_type,lottery_num,kjCodes,kjtime_datetime,datetime.now(),))
         self.conn.commit()
-        cur.callproc('ibc.dbo.SYSPaiJiang',(lottery_num,kjtime,kjCodes,lottery_type,))
+        cur.callproc('dbo.SYSPaiJiang',(lottery_num,kjtime,kjCodes,lottery_type,))
+        self.conn.commit()
+        self.conn.close()
+        return lottery_num
+
+    def BJKCSP(self,lottery_type,lottery_num,kjCodes,kjtime):
+        cur = self.__GetConnect()
+        kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
+        cur.callproc('dbo.IsInfoExists',(lottery_type,lottery_num,kjCodes,kjtime_datetime,datetime.now(),))
+        self.conn.commit()
+        cur.callproc('dbo.bjkcPaiJiang',(lottery_num,kjtime,kjCodes,lottery_type,))
         self.conn.commit()
         self.conn.close()
         return lottery_num
@@ -60,9 +70,9 @@ class MSSQL:
     def JXCallSP(self,lottery_type,lottery_num,kjCodes,kjtime):
         cur = self.__GetConnect()
         kjtime_datetime=datetime.strptime(kjtime,"%Y-%m-%d %H:%M")
-        cur.callproc('ibc.dbo.IsInfoExists', (lottery_type,kjCodes,lottery_num,kjtime_datetime,datetime.now(),))
+        cur.callproc('dbo.IsInfoExists', (lottery_type,kjCodes,lottery_num,kjtime_datetime,datetime.now(),))
         self.conn.commit()
-        cur.callproc('ibc.dbo.SYSPaiJiang', (lottery_num,kjtime,kjCodes,lottery_type,))
+        cur.callproc('dbo.SYSPaiJiang', (lottery_num,kjtime,kjCodes,lottery_type,))
         self.conn.commit()
         self.conn.close()
         return lottery_num

@@ -243,7 +243,6 @@ def CQ360(ssc360_type):
         log.logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
         return draw_date,number,draw_time
 
-
 def CP500wan(ssc500_type):
     #Open website
     """
@@ -277,7 +276,6 @@ def CP500wan(ssc500_type):
         log.logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
         return draw_date,draw_code,draw_time
 
-
 def CQBaidu():
     #Open website
     """
@@ -304,9 +302,35 @@ def CQBaidu():
         d = etree.HTML(ssc_html)
         draw_date_tmp = d.xpath(u'/html/body/div[7]/div[2]/div[2]/div[2]/table[1]/tbody/tr[2]/td[1]/text()')
         print draw_date_tmp
-#
 
-if __name__ == "__main__":
-    CQBaidu()
-    print 'su'
-
+def BJKC():
+    #Open website
+    """
+    :param self:
+    :param ssc_type:
+    :rtype : str,datetime,datetime
+    """
+    url='http://www.bwlc.gov.cn/bulletin/prevtrax.html'
+    try:
+        r = br.open(url,timeout=30)
+    except Exception,err:
+        error1= str(err)
+        print error1
+        log.logging.error(br.title())
+        log.logging.exception(error1)
+        return '0','0','0'
+    else:
+        ssc_html = r.read().decode('utf-8')
+        #show the html title
+        print br.title()
+        mathnum=ssc_html.find('期号')
+        tmpstring=ssc_html[mathnum+500:mathnum+600]
+        print  tmpstring
+        draw_date=tmpstring[1:7]
+        draw_code=tmpstring[25:54]
+        draw_time=datetime.now().strftime("%Y-%m-%d %H:%M")
+        print draw_date,draw_code,draw_time
+        log.logging.info(br.title())
+        log.logging.info('date:%s code:%s time:%s curtime:%s',draw_date,draw_code,draw_time,datetime.now().time())
+        #print result
+        return draw_date,draw_code,draw_time
