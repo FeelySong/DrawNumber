@@ -9,6 +9,7 @@ import sys
 
 
 
+
 reload(sys)
 sys.setdefaultencoding('utf-8')
 STDERR = sys.stderr
@@ -92,14 +93,14 @@ def tjssc():
         d = etree.HTML(ssc_html)
         draw_date = d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[1]/span[2]/a/text()')[0].decode('utf-8')
         print draw_date
-        draw_date = draw_date[42:50]+'-'+draw_date[50:53];
+        draw_date = draw_date[42:50]+'-'+draw_date[50:53]
         number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[1]/text()'))+','
         number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[2]/text()'))+','
         number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[3]/text()'))+','
         number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[4]/text()'))+','
         number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[5]/text()'))
         draw_time=datetime.now().strftime("%Y-%m-%d %H:%M")
-        print draw_date,number,draw_time;
+        print draw_date,number,draw_time
         log.logging.info(br.title())
         log.logging.info('date:%s code:%s time:%s curtime:%s',draw_date,number,draw_time,datetime.now().time())
         #print result
