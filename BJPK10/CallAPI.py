@@ -2,13 +2,13 @@ import urllib2
 import log
 from datetime import datetime
 
-callbackurl='http://vir.dogipig.com/lottery/codelist_bjkc.aspx'
-callbackpin='?pin=jinzun110119120'
-
 def Open_Web(drawdate,drawcode):
-    global callbackurl
-    global callbackpin
+    print 'callapi:'
+    print type(drawdate),type(drawcode)
+    callbackurl='http://vir.dogipig.com/lottery/codelist_bjkc.aspx'
+    callbackpin='?pin=jinzun110119120'
     callbackurl=callbackurl+callbackpin+'&kjCodes='+drawcode+'&kjExpect='+drawdate
+    print callbackurl
     try:
         response=urllib2.urlopen(callbackurl)
         calback_result=response.read()

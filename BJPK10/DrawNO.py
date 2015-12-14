@@ -94,3 +94,34 @@ def BJPK10_BAIDU_JSON():
         print error1
         log.logging.error('BJKC_JSON ERROR:%s',error1)
         return '0','0','0'
+    CQSSC
+
+def CQSSC_BAIDU_JSON():
+    url='http://www.lecai.com/lottery/ajax_latestdrawn.php?lottery_type=200'
+    try:
+        response=urllib2.urlopen(url)
+        datas=response.read()
+        value=json.loads(datas)
+        rootlist = value.keys()
+        print rootlist
+        # for rootkey in rootlist:
+        #     print rootkey
+        subvalue = value['data']
+        draw_date=subvalue[0]['phase']
+        print draw_date
+        # dics=subvalue[0]
+        number=subvalue[0]['result']['result'][0]['data']
+        draw_code=number[0]+','+number[1]+','+number[2]+','+number[3]+','+number[4]
+        draw_time=datetime.now().time()
+        print 'BJPK10_BAIDU_JSON:'
+        print draw_date,draw_code
+        log.logging.info('Source Title:CQSSC_JSON')
+        log.logging.info('date:%s code:%s time:%s',draw_date,draw_code,draw_time)
+        if draw_code == ',,,,,,,,,':
+            draw_code='0'
+        return draw_date,draw_code,draw_time
+    except Exception,err:
+        error1= str(err)
+        print error1
+        log.logging.error('CQSSC_JSON ERROR:%s',error1)
+        return '0','0','0'
