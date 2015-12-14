@@ -5,11 +5,10 @@ import time
 from lxml import etree
 from datetime import datetime
 from bs4 import BeautifulSoup
+import urllib2
+import json
+
 import sys
-
-
-
-
 reload(sys)
 sys.setdefaultencoding('utf-8')
 STDERR = sys.stderr
@@ -91,14 +90,14 @@ def tjssc():
         print br.title()
         ## xpath analyze
         d = etree.HTML(ssc_html)
-        draw_date = d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[1]/span[2]/a/text()')[0].decode('utf-8')
+        draw_date = d.xpath(u'/html/body/form/div[4]/div[3]/div[2]/div/div[5]/div[1]/span[2]/a/text()')[0].decode('utf-8')
         print draw_date
         draw_date = draw_date[42:50]+'-'+draw_date[50:53]
-        number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[1]/text()'))+','
-        number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[2]/text()'))+','
-        number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[3]/text()'))+','
-        number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[4]/text()'))+','
-        number = number+''.join(d.xpath(u'/html/body/form/div[5]/div[3]/div[2]/div/div[5]/div[2]/ul/li[5]/text()'))
+        number = number+''.join(d.xpath(u'/html/body/form/div[4]/div[3]/div[2]/div/div[5]/div[2]/ul/li[1]/text()'))+','
+        number = number+''.join(d.xpath(u'/html/body/form/div[4]/div[3]/div[2]/div/div[5]/div[2]/ul/li[2]/text()'))+','
+        number = number+''.join(d.xpath(u'/html/body/form/div[4]/div[3]/div[2]/div/div[5]/div[2]/ul/li[3]/text()'))+','
+        number = number+''.join(d.xpath(u'/html/body/form/div[4]/div[3]/div[2]/div/div[5]/div[2]/ul/li[4]/text()'))+','
+        number = number+''.join(d.xpath(u'/html/body/form/div[4]/div[3]/div[2]/div/div[5]/div[2]/ul/li[5]/text()'))
         draw_time=datetime.now().strftime("%Y-%m-%d %H:%M")
         print draw_date,number,draw_time
         log.logging.info(br.title())
@@ -271,8 +270,8 @@ def CP500wan(ssc500_type):
         draw_code=html[81:90]
         draw_time=datetime.now().strftime("%Y-%m-%d %H:%M")
         print draw_date,draw_code,draw_time
-        if (number=='?,?,?,?,?'):
-            number='0'
+        if (draw_code=='?,?,?,?,?'):
+            draw_code='0'
         log.logging.info('500wan时时彩'+'   '+url)
         log.logging.info('date:%s code:%s curtime:%s',draw_date,draw_code,datetime.now())
         return draw_date,draw_code,draw_time
@@ -335,3 +334,36 @@ def BJKC():
         log.logging.info('date:%s code:%s time:%s curtime:%s',draw_date,draw_code,draw_time,datetime.now().time())
         #print result
         return draw_date,draw_code,draw_time
+
+def CQSSC_BAIDU_JSON(lottery_type):
+    url='http://www.lecai.com/lottery/ajax_latestdrawn.php?lottery_type='+lottery_type
+    print url
+    try:
+        response=urllib2.urlopen(url)
+        datas=response.read()
+        value=json.loads(datas)
+        rootlist = value.keys()
+        # print rootlist
+        # for rootkey in rootlist:
+        #     print rootkey
+        subvalue = value['data']
+        draw_date=subvalue[0]['phase']
+        draw_date=draw_date[0:8]+'-'+draw_date[8:11]
+        # dics=subvalue[0]
+        number=subvalue[0]['result']['result'][0]['data']
+        draw_code=number[0]+','+number[1]+','+number[2]+','+number[3]+','+number[4]
+        draw_time=datetime.now().strftime("%Y-%m-%d %H:%M")
+        print 'BJPK10_BAIDU_JSON:'
+        print draw_date,draw_code,draw_time
+        log.logging.info('Source Title:CQSSC_JSON')
+        log.logging.info('date:%s code:%s time:%s',draw_date,draw_code,draw_time)
+        if draw_code == ',,,,,,,,,':
+            draw_code='0'
+        return draw_date,draw_code,draw_time
+    except Exception,err:
+        error1= str(err)
+        print error1
+        log.logging.error('CQSSC_JSON ERROR:%s',error1)
+        return '0','0','0'
+
+

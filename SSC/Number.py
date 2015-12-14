@@ -38,6 +38,25 @@ def ssc360_drawnumber(ssc360_type,db_ssc_type):
         # ms.SYSPaiJiang(SPname='ibc.dbo.SYSPaiJiang',kjExpect=draw_date,kjTime=draw_time_str,kjCode=draw_code,ltType=db_ssc_type)
         time.sleep(30)
 
+#baidu重庆时时彩
+def sscBaiDu_drawnumber(lottery_type,db_ssc_type):
+    ms_cqssc= db.MSSQL()
+    global returndate
+    while True:
+        #调用爬虫，获取开奖信息
+        assert isinstance(lottery_type, str)
+        draw_date,draw_code, draw_time_str= DrawNO.CQSSC_BAIDU_JSON(lottery_type)
+        if draw_code == '0' or draw_date <= returndate:
+            pass
+        else:
+            returndate=ms_cqssc.CallSP(lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time_str)
+            time.sleep(180)
+        # draw_time = datetime.strptime(draw_time_str, "%Y-%m-%d %H:%M")
+        # ms.IsInfoExists(SPname='ibc.dbo.IsInfoExists',lottery_type=db_ssc_type,lottery_num=draw_date,kjCodes=draw_code,kjtime=draw_time,addtime=datetime.now())
+        # time.sleep(1)
+        # ms.SYSPaiJiang(SPname='ibc.dbo.SYSPaiJiang',kjExpect=draw_date,kjTime=draw_time_str,kjCode=draw_code,ltType=db_ssc_type)
+        time.sleep(30)
+
 # 500wan时时彩
 def ssc500_drawnumber(ssc500_type,db_ssc_type):
     ms_cqssc= db.MSSQL()
@@ -179,6 +198,16 @@ def main():
     #     p_360cq.start()
     #     p_360cq.join(timeout=10)
 
+    # #BaiDu重庆时时彩
+    # sscbaidu_type='200'
+    # db_ssc_type='SSC'
+    # jobs=[]
+    # for i in range(2):
+    #     p_baiducq=multiprocessing.Process(name='BaiDuCQSSC',target=sscBaiDu_drawnumber,args=(sscbaidu_type,db_ssc_type,))
+    #     jobs.append(p_baiducq)
+    #     p_baiducq.start()
+    #     p_baiducq.join(timeout=10)
+
     # #500wan重庆时时彩
     # ssc500_type='ssc'
     # db_ssc_type='SSC'
@@ -207,14 +236,14 @@ def main():
     # p_cq.start()
     # p_cq.join(timeout=10)
 
-    # #天津时时彩
-    # db_ssc_type='TSC'
-    # jobs=[]
-    # for i in range(2):
-    #     p_tj=multiprocessing.Process(name='TJSSC',target=tjssc_drawnumber,args=(db_ssc_type,))
-    #     jobs.append(p_tj)
-    #     p_tj.start()
-    #     p_tj.join(timeout=10)
+    #天津时时彩
+    db_ssc_type='TSC'
+    jobs=[]
+    for i in range(2):
+        p_tj=multiprocessing.Process(name='TJSSC',target=tjssc_drawnumber,args=(db_ssc_type,))
+        jobs.append(p_tj)
+        p_tj.start()
+        p_tj.join(timeout=10)
 
     #江西时时彩
     # ssc_type='jxssc'
@@ -236,14 +265,14 @@ def main():
     # p_11x5.start()
     # p_11x5.join(10)
 
-    # 北京PK10
-    db_ssc_type='bjkc'
-    jobs=[]
-    for i in range(2):
-        p_bjkc=multiprocessing.Process(name='bjkc',target=bjkc_drawnumber,args=(db_ssc_type,))
-        jobs.append(p_bjkc)
-        p_bjkc.start()
-        p_bjkc.join(timeout=10)
+    # # 北京PK10
+    # db_ssc_type='bjkc'
+    # jobs=[]
+    # for i in range(2):
+    #     p_bjkc=multiprocessing.Process(name='bjkc',target=bjkc_drawnumber,args=(db_ssc_type,))
+    #     jobs.append(p_bjkc)
+    #     p_bjkc.start()
+    #     p_bjkc.join(timeout=10)
 
 if __name__ == "__main__":
     main()
